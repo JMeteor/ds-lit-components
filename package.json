@@ -1,0 +1,35 @@
+{
+  "name": "ds-lit-components",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "format-check": "npx prettier --check ./",
+    "format-write": "npx prettier --write ./",
+    "chromatic": "npx chromatic --project-token=chpt_8f99a0637cb8f24"
+  },
+  "dependencies": {
+    "@floating-ui/dom": "^1.4.5",
+    "lit": "^2.7.5"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.26",
+    "@storybook/addon-links": "^7.0.26",
+    "@storybook/blocks": "^7.0.26",
+    "@storybook/builder-vite": "^7.0.26",
+    "@storybook/web-components": "^7.0.26",
+    "@storybook/web-components-vite": "^7.0.26",
+    "chromatic": "^6.19.9",
+    "prettier": "3.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.26",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.0"
+  }
+}
