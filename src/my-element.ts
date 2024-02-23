@@ -44,6 +44,7 @@ export class MyElement extends LitElement {
   }
 
   private _onClick() {
+    console.log('figma', import.meta.env.FIGMA_ACCESS_TOKEN)
     this.count++
   }
 
