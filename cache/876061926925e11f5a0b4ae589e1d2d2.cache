@@ -1,0 +1,1488 @@
+{
+  "error": false,
+  "status": 200,
+  "meta": {
+    "styles": [
+      {
+        "key": "3ea90399a69761562ffd3f3f56c4223374b1ba20",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:521",
+        "style_type": "EFFECT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/3c9/Pyd/bxkz4tZNP0u4DBHt/330_521.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=34dd7b95c3b7d8259a5de33551f9114c304cdf2ef8ddf57f92e24c3d5ea1c3b1",
+        "name": "button/secondary/shadow/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.152Z",
+        "updated_at": "2024-02-29T13:33:27.152Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"W"
+      },
+      {
+        "key": "6759e4a13c77e3b723f776bac3fd9b0b4d9f7431",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:520",
+        "style_type": "EFFECT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/9wv/Mbc/w5Ab4Udkb8PCN1oc/330_520.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f482775568fdc884c60e652aeaa3cf970008d1e6c9915d63c95012e53b65cf39",
+        "name": "button/secondary/shadow/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.158Z",
+        "updated_at": "2024-02-29T13:33:27.158Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"V"
+      },
+      {
+        "key": "6b188072b7937d26f75d4b5b86dafe8258097da6",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:522",
+        "style_type": "EFFECT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/6KV/pIn/Z3LC4uS5z2iFigr1/330_522.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=06f3e7763599b01bde5205de77e7189a3e195f59930ccd743452389e5f4ab32e",
+        "name": "button/secondary/shadow/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.163Z",
+        "updated_at": "2024-02-29T13:33:27.163Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"X"
+      },
+      {
+        "key": "f21a7309cc0048188e23ae1b02d9b4f853216146",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "28:295",
+        "style_type": "TEXT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/OvL/7qi/Fw1ca2FygwrD4UDK/28_295.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9ce205dbfc1fbb0dd9c94bd9b67132fa76e2bf4a3f59a01c599f5f3a08e3c153",
+        "name": "Button/Small/Default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.168Z",
+        "updated_at": "2024-02-29T13:33:27.168Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"7Z"
+      },
+      {
+        "key": "64743a040c863800510a539f16c381ed151ee9e1",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:497",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ndU/3zp/6EX5Bg7o7o6x2o3y/330_497.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5348aa612890972d0fbc78fbb76f8eb09a3a39c800edf39c2879f4c206dc883b",
+        "name": "button/neutral/icon/pressed",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.877Z",
+        "updated_at": "2024-02-29T13:33:29.877Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Pr"
+      },
+      {
+        "key": "182f895cb287dd78f6a6d289224ad3aedb1df714",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "333:494",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Ez4/Nu2/05JaLl73d5P1uaC4/333_494.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0ef7bde3ec0cab505c2e774b38ec8d9f6b8c2b905a3147d71d86b4f0d45ca7a9",
+        "name": "input/accent/symbol/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.882Z",
+        "updated_at": "2024-02-29T13:33:29.882Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y{r"
+      },
+      {
+        "key": "efee14ea5e308d26573af32c759d3d3986d0c27e",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:503",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/sYw/VAF/TZeblLj2h92IJTE9/338_503.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e08acb8036e8d1f1d6cd3aae67a433393239a6d5c633fe05f5819b4a51f0c6c2",
+        "name": "scrollbar/surface",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.887Z",
+        "updated_at": "2024-02-29T13:33:29.887Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "z"
+      },
+      {
+        "key": "76bf90eff94d49a75b1de0275286e1c8e1a3b69c",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "333:495",
+        "style_type": "EFFECT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Tdp/nEd/YEvZnT9ZhrjfnfHq/333_495.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b395712cd0489cd71a74c312081739b720a4d2ed6642f737c69aa27746c9ca70",
+        "name": "input/shadow/focus",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.174Z",
+        "updated_at": "2024-02-29T13:33:27.174Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"Y"
+      },
+      {
+        "key": "ccfe82a9723b3917a5ab532a75e5bdd5837e061c",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "28:327",
+        "style_type": "TEXT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/d91/k6M/a1t8Y0nMhindYZAi/28_327.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=579dedd70b9cd40016259ecd17e900f3873261a984ed557df37f5c835c9bb277",
+        "name": "Button/Default/Link",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.179Z",
+        "updated_at": "2024-02-29T13:33:27.179Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"7O"
+      },
+      {
+        "key": "f341ed20be816ca9643c3c1192f0cbfa08d8f03b",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "28:329",
+        "style_type": "TEXT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/dzh/oCf/nFerzMIsuvRtGk4M/28_329.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=187fecd8fbc0a5a0f18ca882719ee2172e764e0774ee3d2ecf16a79e3424e722",
+        "name": "Button/Small/Link",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.183Z",
+        "updated_at": "2024-02-29T13:33:27.183Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"7f"
+      },
+      {
+        "key": "f5c07668232cf8fad5502475335c56f0a35b485f",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "28:294",
+        "style_type": "TEXT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ih6/FYm/eNVV7chOsH3fGKx7/28_294.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=720ed6076c575fe37bfb7507123723e33ca3209acd68a75b7e7fbf2d50aaeac3",
+        "name": "Button/Default/Default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.188Z",
+        "updated_at": "2024-02-29T13:33:27.188Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"7"
+      },
+      {
+        "key": "de253d8880595737bbc2054fa696f26718edadf0",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "34:394",
+        "style_type": "TEXT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/F1h/vi1/1pAmEU6cDpOPuF1g/34_394.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c0a5d7571c7d014905d8ec885dda4443fa3f60568893ecd1e7b6e1b4f347b18f",
+        "name": "Field/16",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.193Z",
+        "updated_at": "2024-02-29T13:33:27.193Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"7g"
+      },
+      {
+        "key": "e6936ab4688b5214e1e999490200a6a00ba9f6db",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "327:530",
+        "style_type": "EFFECT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Dmx/pcd/c9Gb4zeH7q1I1lRV/327_530.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fe64370138c1e6bc63093ac146051f969a77264d474c066b67f3b14b0b25f479",
+        "name": "button/primary/shadow/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.198Z",
+        "updated_at": "2024-02-29T13:33:27.198Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"R"
+      },
+      {
+        "key": "d6bd28b9b9a1d7396ae52043458f6c6da2aee915",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:487",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/6bi/mTu/JJSQlTtssCO3rPD1/338_487.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=763d2807b4112ac38bfc942868027eb554275aa270a30729586eba83169bd9e0",
+        "name": "input/accent/text/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.203Z",
+        "updated_at": "2024-02-29T13:33:27.203Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Yr"
+      },
+      {
+        "key": "0f207a97ea7f4fce9c49c93ef4bd6586aaf64206",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:498",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/3mw/niG/gMWhHwtplN8oQIK6/330_498.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ea3a96a3b54cc85346e9a7b785de5563a230e6135b2f8359c7786af968e7619c",
+        "name": "button/accent/stroke/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.208Z",
+        "updated_at": "2024-02-29T13:33:27.208Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "4O"
+      },
+      {
+        "key": "c4f447cb90bfab047b2f676c72f50740979676c3",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:493",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Udq/Zil/ZL2W1YqP2McBJnln/330_493.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ea0610d70180bb0cbbed576e46fea892132e3c8fea30d46b3139fd481140d7f6",
+        "name": "button/accent/surface/pressed",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.212Z",
+        "updated_at": "2024-02-29T13:33:27.212Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": ">"
+      },
+      {
+        "key": "b6444ebe40163b2872bef49ce42c0094f9390644",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "354:481",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/iVJ/QGl/xR3lnGah5cHuZHXo/354_481.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6fe1ffa5f13cab7d8ae12e9a883b2444e65269ed538a353191fd811a24c84160",
+        "name": "feedback/error/text/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.217Z",
+        "updated_at": "2024-02-29T13:33:27.217Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "|"
+      },
+      {
+        "key": "0bf009102a496568221d3bdb8a39b0d211c6592b",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:500",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/5ox/NHC/vRanbUNlXNJdUS6f/330_500.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=83f3dd9c8d338c418ad34fe3da3866df6e910224bc6e55609e8b99ed0ae81449",
+        "name": "button/accent/text/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.222Z",
+        "updated_at": "2024-02-29T13:33:27.222Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "6"
+      },
+      {
+        "key": "489648c49e19534a2db04dcdab2cb93c6dca164c",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "333:485",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/cKp/4im/MGqdmL2izpR05emf/333_485.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5041e2253aff9fa72feb4c076c4dd85a95ac5b94e9702df4130a9b5e6802e5fc",
+        "name": "input/accent/stroke/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.227Z",
+        "updated_at": "2024-02-29T13:33:27.227Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y{7"
+      },
+      {
+        "key": "b26fcd5e8eeb25b1489f8e45fee01abba5f4fbad",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:497",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/S4v/qR6/sOcm0zv5YTYLfMlM/338_497.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e2eec8fc8a38e828eac026da85d15911420d70ca95460c825c8234d1a07c784b",
+        "name": "dropdown/stroke/selected",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.232Z",
+        "updated_at": "2024-02-29T13:33:27.232Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "t"
+      },
+      {
+        "key": "efdca503d7429d030f7c812e69acbb3580be2cd9",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:508",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/23l/luU/TenmWdg3GHZpExjx/330_508.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9574df91da056d5ad8f31817856a45641ae44c62fca140dce7b99786fb2c81e4",
+        "name": "button/neutral/surface/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.236Z",
+        "updated_at": "2024-02-29T13:33:27.236Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "H"
+      },
+      {
+        "key": "9caee9e5789cbe9c1b4089dbb44ee7f120bdfa5d",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:507",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/eA7/Soe/EC34TNO6K6E3shYY/330_507.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5559183972968986b7dfdc8497750cc4dc868a3db41a181490765778d52af1f3",
+        "name": "button/accent/text/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.241Z",
+        "updated_at": "2024-02-29T13:33:27.241Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "6O"
+      },
+      {
+        "key": "bd85a1ab55e0fedf80c7b28e85fdbccc91d14953",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:499",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/h8Y/v8K/YPiK1ZOugfPGXbDK/330_499.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c5a607a834bdd3859665670015d9818729bacdec7c8bf597995d5dc94a1c6791",
+        "name": "button/neutral/surface/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.246Z",
+        "updated_at": "2024-02-29T13:33:27.246Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "B"
+      },
+      {
+        "key": "595f3bf111d431ac678903c1e2b6a37810e51111",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:486",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/BEE/Coi/CEBz3qlthsjVBnW8/330_486.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=99590abe4acbcfa86b1e20431147a2d74d2c8bd9fb367449bcfeb70ff0c99636",
+        "name": "button/accent/surface/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.250Z",
+        "updated_at": "2024-02-29T13:33:27.250Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": ";"
+      },
+      {
+        "key": "889c0ed4c46f1c719806f6342ccdf6ad85bc3418",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:492",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/eGp/Q6A/e7cl7FAVN3QK5pK1/338_492.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a6a0df63753c9372d846c98c707e51236e69fe711a2c10ce9f4a0e474a0f536f",
+        "name": "input/neutral/surface/focus",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.255Z",
+        "updated_at": "2024-02-29T13:33:27.255Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y}r"
+      },
+      {
+        "key": "c2298890e1bc339fa5138932f385aef0615ce7c1",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:517",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/37U/HbM/KSYgcuJnJDpr0qNw/330_517.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fd3828f7e3adfa81ee8468d96c76e2122afc42f9d0e50d0acac02da4eb398fda",
+        "name": "button/accent/stroke/pressed",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.260Z",
+        "updated_at": "2024-02-29T13:33:27.260Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "4x"
+      },
+      {
+        "key": "d9aa35770447df66f9c425888cba032acf9d611d",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:512",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/j8p/OoV/mPNBGFaLUo5LeemW/330_512.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2d9071eebb892d590ad7d459688c00ada74da80607be24d1bb9f7e729900f9c5",
+        "name": "button/accent/text/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.265Z",
+        "updated_at": "2024-02-29T13:33:27.265Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "6f"
+      },
+      {
+        "key": "37304ece5112dded59ae31f90472cd0a668148da",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:498",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/1ya/Ezy/FhB44hH7GVc6UVOw/338_498.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8e76fae15f0b86c8f105a1af3841fe5df3d6847527fa5f60258b77b8acfa7908",
+        "name": "input/neutral/surface/selected",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.270Z",
+        "updated_at": "2024-02-29T13:33:27.270Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y}Z"
+      },
+      {
+        "key": "900a848bde61aca103f00cdf008c2f309ff88815",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "327:527",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/xzU/x4x/yzaQDrQk4yafYhlr/327_527.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f66536997c405ea1c7b1c94d236040c330a9adaf100be55a0bc913846ef79e30",
+        "name": "button/neutral/text/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.275Z",
+        "updated_at": "2024-02-29T13:33:27.275Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "B7"
+      },
+      {
+        "key": "518202a34d472808613818819e626169bf071a91",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:484",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/c1e/qSa/ptF0JyzsLVkTton0/338_484.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=03a39bcb5473bdcf3c2d2c8e4aab7ab94ac416e33cc79e13046a5422e5e714af",
+        "name": "input/accent/symbol/error",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.279Z",
+        "updated_at": "2024-02-29T13:33:27.279Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y{x"
+      },
+      {
+        "key": "5ea20de01d61c0e75e4ff5d2a0d33752e590f9fa",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:515",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/g7W/JSe/prsjhO5lR4q80geb/330_515.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8b460a04052b0c4ef6844dd16ea735e532e43159a898e666f449cf6c02afc018",
+        "name": "button/accent/text/pressed",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.284Z",
+        "updated_at": "2024-02-29T13:33:27.284Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "6r"
+      },
+      {
+        "key": "00c4f4d12a140b104004cfe546b472ab0530ff26",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:480",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/a00/FLp/7NoTC3GwNZ1SJTf2/330_480.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4e69b695e8cbde9fe027a505be0db9ce09cae646df922847135494e2f92bfe6f",
+        "name": "button/accent/surface/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.289Z",
+        "updated_at": "2024-02-29T13:33:27.289Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "8"
+      },
+      {
+        "key": "25b1c6e3fd7fd8fcc68ea83ccefad24122e756b2",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "333:480",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/SGS/8gO/zO9gnrZB3t8TcbIM/333_480.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=da7f66cdc023b9e0abd9e539d0f9c33b7c177395dd09b99e77a453336b73446b",
+        "name": "input/neutral/surface/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.293Z",
+        "updated_at": "2024-02-29T13:33:27.293Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y|"
+      },
+      {
+        "key": "dcf9139a6d0eca3d62482d20d287937f67c7b78e",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:486",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/aPB/NGo/rTr7d8WS4mlNJHUo/338_486.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=09a44246be85b5f1dc620f91ba0c07027e4979c6de4bac008f10d2aba1688d82",
+        "name": "input/accent/text/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.298Z",
+        "updated_at": "2024-02-29T13:33:27.298Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Yf"
+      },
+      {
+        "key": "b50da27180acbe11576ae88d44ef0c85f115bfd8",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:501",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/L8r/SWi/XWL1yjwtD6Rf4c6Y/338_501.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5b35de410bee4d6535404fffc7b26177051bfe0928fb23436753941b1aa504c4",
+        "name": "dropdown/text/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.303Z",
+        "updated_at": "2024-02-29T13:33:27.303Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "x"
+      },
+      {
+        "key": "6fad3f0f433679fd0a3bc4996c9955bc7627fa93",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "333:484",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/HB4/0op/mHswbKNsQdwKvekq/333_484.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d3499a0638083b883ded9cba11475805cd3b2ea114b1a5c6451a37e82fb9a509",
+        "name": "input/accent/symbol/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.308Z",
+        "updated_at": "2024-02-29T13:33:27.308Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y{O"
+      },
+      {
+        "key": "6f1d09edf86b87a4cde079590c6b606537ae3b72",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:514",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/aKn/7Oh/PLwQdfUf2VfzQMqe/330_514.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=264a31c0c3a4005e4bd1031af6a24ae1e1e795978396c7b1454e11ca844af587",
+        "name": "button/accent/icon/pressed",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.313Z",
+        "updated_at": "2024-02-29T13:33:27.313Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "6|"
+      },
+      {
+        "key": "52fa9cdd15241d7bffca65384c7e62447e94a80a",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:488",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/aK6/JM5/d4LE6U34MJHT5O2m/338_488.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=96eacd7b104147f21daae35fc75e4593ee86fd7c2aead94fe6558bcbc449e5ee",
+        "name": "feedback/error/stroke/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.318Z",
+        "updated_at": "2024-02-29T13:33:27.318Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "~#O"
+      },
+      {
+        "key": "cd662ed0f503176dddebb7461f8013111bceabe0",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "327:529",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Do7/5jU/11GeF5MTBIrvOrOw/327_529.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1a0759aae78f5cb816eb4c843dac7c4f3526f15010955a468cb28be4aa6af34d",
+        "name": "button/neutral/icon/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.324Z",
+        "updated_at": "2024-02-29T13:33:27.324Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "P"
+      },
+      {
+        "key": "eba4e283ba3a83df4d04cc9a8ce06467215e6687",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:488",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/9in/ECu/Datf9zIEH7TqZNnV/330_488.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c676f60bb15a20ecc6111019eb115fe663dffde30f32b5815f356720e0c85e80",
+        "name": "button/neutral/text/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.328Z",
+        "updated_at": "2024-02-29T13:33:27.328Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Mr"
+      },
+      {
+        "key": "33c20fbfdb731835282693cf4cc2049dba518f4f",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "333:487",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/EOa/TkN/75IJdXpXE4Dhc11e/333_487.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7a352af4b583e2c24dfedcb27f890f8c2c70cb6ad965044f84a486449c73bdab",
+        "name": "input/accent/stroke/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.334Z",
+        "updated_at": "2024-02-29T13:33:27.334Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y{C"
+      },
+      {
+        "key": "baff46b7af49835090ba3928a77faaf1364c6179",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:503",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/gz2/yq4/iPItISDWzRnL08XF/330_503.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a739c2597a529223c254ddb172fc05912fb0edf4a4fa52d1370399f5c8808567",
+        "name": "button/accent/icon/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.339Z",
+        "updated_at": "2024-02-29T13:33:27.339Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "6x"
+      },
+      {
+        "key": "00c4aea1fdb572d0b2f85fc0eeac8383eb956fbb",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "333:488",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/riZ/Thz/yRv5T9zCgkPPURHu/333_488.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=683a98b02cea87015f07767d6532f014dca4d59eda7577b22549147b4562c315",
+        "name": "input/neutral/surface/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.343Z",
+        "updated_at": "2024-02-29T13:33:27.343Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y}"
+      },
+      {
+        "key": "6051b27bbc2b7c87f3735807f7954051a4edf9a6",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:505",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/kKJ/ID5/EuRGlDEg1NoKGJBn/330_505.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=52d0548bcee9422ae1d5f1a6a3c28720985c5f68307dda705d600f3810e9e415",
+        "name": "button/accent/stroke/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.348Z",
+        "updated_at": "2024-02-29T13:33:27.348Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "4f"
+      },
+      {
+        "key": "f422edbe39d481b296e26740eef3937f97bc07b7",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:506",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/XGF/eJH/X6LWyMGKwZL9HHYo/330_506.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cee1008f1ac02cc18fc207f038b0a4a46c1aa3f039716b15d166c89cbd16e6b7",
+        "name": "button/neutral/surface/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.353Z",
+        "updated_at": "2024-02-29T13:33:27.353Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "F"
+      },
+      {
+        "key": "3d342e6ac5834c3f704977069e1f55cdffa78ed6",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "381:810",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/AZJ/NRY/AjZL7QW0xAnCVi0P/381_810.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5bb11d58f19e7829c51b069487d4850a0bef5810ac54a26cd5ed2294f6a119e8",
+        "name": "input/accent/text/selected",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.358Z",
+        "updated_at": "2024-02-29T13:33:27.358Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "~,"
+      },
+      {
+        "key": "8b66c3cf28c1dbbee9ce3d1e058095749eafc20e",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:509",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/A3y/iMU/UL89iapzDA2y4z0l/330_509.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d3406294a29cfd1a81b4db37494b23f36dcec5d716c315de76bd89dc5c726fb9",
+        "name": "button/accent/stroke/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.365Z",
+        "updated_at": "2024-02-29T13:33:27.365Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "4r"
+      },
+      {
+        "key": "61c5b68236be730fbcc7275083ef0c00a5663ed0",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "354:482",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/sUw/RDQ/D2uq71j7IzHNOEeT/354_482.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ce0dc9e83d17bfd206649846cc399820492a061e69af119f31eccdb3177ea995",
+        "name": "feedback/warning/text/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.369Z",
+        "updated_at": "2024-02-29T13:33:27.369Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "}"
+      },
+      {
+        "key": "e84020867465b641e142889d18850d1d0c6004df",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:485",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/MlH/5n4/pynWsysGQYWesUF5/338_485.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=368ef078083bf738e46b254f2370d18482f8497f6b3c68e212ca217aeabcb1ae",
+        "name": "input/accent/text/error",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.374Z",
+        "updated_at": "2024-02-29T13:33:27.374Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y{"
+      },
+      {
+        "key": "8d37a8ffb1d5298bc99a8ae1bea997197cae4026",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:482",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Ryp/xlN/FYeVCF49KH0P81pd/330_482.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=48321655e94243eb53bfd56e0eb35bf7712e5ee52b51c4286682dcede26def45",
+        "name": "button/neutral/text/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.379Z",
+        "updated_at": "2024-02-29T13:33:27.379Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Mf"
+      },
+      {
+        "key": "420697c7918fdcfedbc86752887186991a7a6d4c",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:489",
+        "style_type": "EFFECT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/08v/iNA/SCkGoZqDKETPsP1z/330_489.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3dfaa0b3d81c23d7b4f2ce7a1c9dd64d2477c59fe2ab108a1b20a8cd86b108f5",
+        "name": "button/primary/shadow/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.384Z",
+        "updated_at": "2024-02-29T13:33:27.384Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"U"
+      },
+      {
+        "key": "ad3034d124a1154549cbc3f71480618968a0c025",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "333:486",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/po2/UgG/nQXyVcNZDlR4IrGn/333_486.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5f1b4f44e2ca32eb7f57c087b00edcdcc4e07213902700c21d9004db8ee86a9c",
+        "name": "input/accent/symbol/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.389Z",
+        "updated_at": "2024-02-29T13:33:27.389Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y{f"
+      },
+      {
+        "key": "dc43cf0725304d99816612170bced3d4e06add89",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:485",
+        "style_type": "EFFECT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/SrL/510/WVMFrQJUlBeKtKzY/330_485.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d85e8b61ba3ae4ca943078ee7ff04954a4f7931527fe3de7de73558c706cb523",
+        "name": "button/primary/shadow/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.394Z",
+        "updated_at": "2024-02-29T13:33:27.394Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"T"
+      },
+      {
+        "key": "4adc6c1325a4732ef2e259c8e3721853b114f8c3",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "333:490",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/oFL/uRb/NvSZQgZaySM3Ml4r/333_490.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=649ca92451483ca00ba87d6e3d6315346e30b6f6814456006438af8e32a58b7a",
+        "name": "input/neutral/surface/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:27.399Z",
+        "updated_at": "2024-02-29T13:33:27.399Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y}O"
+      },
+      {
+        "key": "eff8b1e60c7028289d7151ea829a6daeac840085",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:491",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/4iI/YXb/bAZdFJSUWrSJjGQo/330_491.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c06c680a7376d2bbd33fe2f873b0b82e7712f09c994a5f0ef01ddf54881b6be5",
+        "name": "button/neutral/text/pressed",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.892Z",
+        "updated_at": "2024-02-29T13:33:29.892Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Mx"
+      },
+      {
+        "key": "e67df0d70e57d42c13c4a194098f963a3a4f9388",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:502",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/P9C/J7f/jkxCSnWggICZTke2/338_502.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d59382b864f584f51fa1cdd0465735d9c3b3eae9586c44ab71490a5f40af8d7c",
+        "name": "scrollbar/icon",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.897Z",
+        "updated_at": "2024-02-29T13:33:29.897Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "y"
+      },
+      {
+        "key": "228a06745cbfb97112cf39af176c3258b2c7c433",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:480",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/2UJ/5TB/Cr34htCvr03gSkSk/338_480.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=bd6e7fcb9d47407774e3177a156c8d4aab5c282bc42847e6e8ae1101061c3f0f",
+        "name": "input/accent/placeholder/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.902Z",
+        "updated_at": "2024-02-29T13:33:29.902Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y{|"
+      },
+      {
+        "key": "5b793169f26e364b16c6995357d13c775bb4be3d",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "370:641",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ZB3/qRW/Grahborp3XND6wom/370_641.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d1d238df34ef0bee89b405ab9ccbd3cf31fe5a90f30dfcf593732e01079fc2f2",
+        "name": "feedback/accent/text/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.907Z",
+        "updated_at": "2024-02-29T13:33:29.907Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "z7"
+      },
+      {
+        "key": "5e1c57339c71a8eaed05f9089881d134eeb21cb1",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:494",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/J3f/JKq/fujCgtUiRXQXVgKp/338_494.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c489894999a47f966dee4a3539362bf1ce07ef50f690aebceb7d708e208252ff",
+        "name": "input/accent/text/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.911Z",
+        "updated_at": "2024-02-29T13:33:29.911Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "YO"
+      },
+      {
+        "key": "98c151bdb85049458c1c25e4674e0eb2eaefce7b",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "354:483",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/05I/wRB/IothUaYxQMyDAtCL/354_483.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1bed72552a424256b8585d091a4b7664282450b69e1635484bbb6075d117b1f8",
+        "name": "feedback/info/text/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.916Z",
+        "updated_at": "2024-02-29T13:33:29.916Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "~"
+      },
+      {
+        "key": "70ad66bcebc847a1b68c71021d875aedba74fba8",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "327:524",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/hjP/O1R/SjF8Wtox2y4KEhE2/327_524.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=30d421312f7dfbe581d3c37034d54bfca9df39eb100832e5d9e071f01fb945be",
+        "name": "button/accent/surface/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.921Z",
+        "updated_at": "2024-02-29T13:33:29.921Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "4"
+      },
+      {
+        "key": "0f085e1a7210c51824ebe7f05546733c9e71612a",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:493",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/36z/Gvg/eEMIeRD7AJmvprTF/338_493.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2cafda934e0e04a4ff4136d22d3380a9e2c3b2fe901fabc490ee6df317827d54",
+        "name": "input/accent/text/focus",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.926Z",
+        "updated_at": "2024-02-29T13:33:29.926Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Yx"
+      },
+      {
+        "key": "95394b80a008a7534fc5d4b07f8ea469badbf8cc",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "34:396",
+        "style_type": "TEXT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/u24/73G/UfjdgoXCfdnznxsV/34_396.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0c24ec38f0b48258ca33ed2b959c90a1cbcebf2b33a74b6b68065e87b94d5afa",
+        "name": "Field/14",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.930Z",
+        "updated_at": "2024-02-29T13:33:29.930Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"7gO"
+      },
+      {
+        "key": "e3042e8e30d2b7b942ee365b4eee1ce8a6f7979e",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "34:403",
+        "style_type": "TEXT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/gyx/HCM/3mGniEswdeSqJlzw/34_403.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2004227d0b75f486f35a002cb33510690fef4fa88c9aef8221e2e2fea8e09891",
+        "name": "Field/Bold",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.935Z",
+        "updated_at": "2024-02-29T13:33:29.935Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"7i"
+      },
+      {
+        "key": "5419ef8058aeb9e9eb4d605057ae5797010140cb",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:499",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/yX9/Vkg/IZ1HAmLD8EYIC9Te/338_499.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=60306e52e941fb66e1669dbe5bd7699235875de68e3ca54b9513593619451096",
+        "name": "dropdown/text/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.940Z",
+        "updated_at": "2024-02-29T13:33:29.940Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "v"
+      },
+      {
+        "key": "38e59830b608e8dad558314172544f66a36ad960",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "354:479",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ENW/mcg/y1l4xI0mgpZvs8N4/354_479.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=791c8a146f2c14c9cd285701dd3a15d7000cdd836f9964adcdca7d2023f431ac",
+        "name": "feedback/success/text/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.945Z",
+        "updated_at": "2024-02-29T13:33:29.945Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "{"
+      },
+      {
+        "key": "63decb22bda7a9f424e31d86c5465c0a735ece5c",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:481",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/8JS/liy/vNLS6CUcriOeGWUe/338_481.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=63007772c59c9bd80b88ed6a7fcface80bb3446f27ef9f23ab87ea9249353848",
+        "name": "input/accent/placeholder/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.949Z",
+        "updated_at": "2024-02-29T13:33:29.949Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y{}"
+      },
+      {
+        "key": "ae6153c2378de4845988cc371fa62929a79c3840",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "381:806",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/nHY/muM/31xCJ1DmVwPwpdrt/381_806.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3a99f1f570ba8c059a787637d1a1da4b42ac5128420c7ec9011da67bb95b8eba",
+        "name": "input/accent/text/inverse",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.954Z",
+        "updated_at": "2024-02-29T13:33:29.954Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "~)"
+      },
+      {
+        "key": "76e940e1734c92d45a5a139f9490a561514d00a9",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "354:485",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/3Hr/v8s/o9Ehno3YuLZjWxy7/354_485.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e0af3faa1f3d0d01a7991e9c2c71026f6b23c93cf0157d390831802020f89cf0",
+        "name": "feedback/success/symbol/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.959Z",
+        "updated_at": "2024-02-29T13:33:29.959Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "~!"
+      },
+      {
+        "key": "d8bc5924f2ffc1bdb98a5fc09fb0beb6dbc0d38b",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:511",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/13k/99P/snLYtcsYiFgtSEFp/330_511.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ef930da7b4fa0349f157f70f8d326e7d144658b175388e04e076c0afe34d450d",
+        "name": "button/accent/icon/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.964Z",
+        "updated_at": "2024-02-29T13:33:29.964Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "6{"
+      },
+      {
+        "key": "221b7dbbe251eb527707ab4ef8a93bea1e0a50f1",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:495",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/xMd/KJE/TkWvz0EKEhvhOnc0/338_495.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=aaaeceb04eb2d96aa1f1deca00ef64c201ac3966bf7877fe3b618f34a7ef49f3",
+        "name": "input/accent/symbol/focus",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.968Z",
+        "updated_at": "2024-02-29T13:33:29.968Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y{{"
+      },
+      {
+        "key": "7115fc7e6c9692f00c74d54b331398711589e60e",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "354:488",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/P3Z/kCg/kekRosUtVAsJoSiL/354_488.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ecd38cf0e7eb2eb7947bc31aebce340ec2bfa2415ddd05505e9a6a2fa5bbb8f6",
+        "name": "feedback/warning/symbol/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.973Z",
+        "updated_at": "2024-02-29T13:33:29.973Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "~\""
+      },
+      {
+        "key": "4af0aae8365ff6e85f7c8c58e1a337af448c0af0",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "354:492",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/EVA/9i2/AlZTPZitzJyQZ2jj/354_492.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=07b344b7fac5dbbc67b6e2a26cf9b20f148365e2a9678dc16e4b9c11148e9c1a",
+        "name": "feedback/error/symbol/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.978Z",
+        "updated_at": "2024-02-29T13:33:29.978Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "~$"
+      },
+      {
+        "key": "aa8efeca8314d81c84b49688ab647d2aa3e4229f",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "381:808",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/1iz/tZh/WMZdDxbsTQ1jrkPP/381_808.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c92eb55e13c707dfc791fb97ced490740fb600539d73cb3ff4c3b707c298211f",
+        "name": "input/accent/surface/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.983Z",
+        "updated_at": "2024-02-29T13:33:29.983Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "~*"
+      },
+      {
+        "key": "8b3ff4ea93eec0836bb88730d5a2fe6d060f56dc",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:495",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/USP/dDZ/6tdZygvT6lU9uMBI/330_495.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=41fcb44cc676925ed414c3415e5fc62a816178f7b76812a5ec5a1f349f3c94c4",
+        "name": "button/neutral/icon/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.988Z",
+        "updated_at": "2024-02-29T13:33:29.988Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Pf"
+      },
+      {
+        "key": "fbc9b5fe5ff9142d47401d5dbebaa03b752ae05c",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "354:493",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/LkN/dNT/MXYl7yhVXKE5bPNQ/354_493.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f6ea63af42c25f951e0ea91955ef19d5bdc999ada7111d941260e8424e7ce427",
+        "name": "feedback/neutral/symbol/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:29.997Z",
+        "updated_at": "2024-02-29T13:33:29.997Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "zf"
+      },
+      {
+        "key": "1f0dc1e1a67e2ce839dc44ffd72fd4f157cec2f1",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:484",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Ikr/fYc/sifzECiNPvsNyUZg/330_484.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=28c1951469c1b2bd0a69f6d78c510542a23d59ffa69d3be8b73b86e3efb98635",
+        "name": "button/neutral/icon/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:30.002Z",
+        "updated_at": "2024-02-29T13:33:30.002Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "PO"
+      },
+      {
+        "key": "b91e6dc1857bdf367e44f3757181ef39b589960b",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "333:492",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/LNX/oAz/Vf3Bf85cV9VrUhqm/333_492.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=52d3a11fc32e2e5521a02d84ba2e2a8ec8aa9089e3ca5d98363f6f8ab31229ec",
+        "name": "input/accent/stroke/hover",
+        "description": "",
+        "created_at": "2024-02-29T13:33:30.007Z",
+        "updated_at": "2024-02-29T13:33:30.007Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y{I"
+      },
+      {
+        "key": "5cf655c6e8a3a5c3cd413e1986b3b6c52802a180",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:490",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/XKt/VYb/e0Oxm6JfZDwFoL0W/338_490.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=86675e5945447f402ca58d4a13e55fd1d08b261e18d6a88d403b2a14f252a357",
+        "name": "input/accent/stroke/focus",
+        "description": "",
+        "created_at": "2024-02-29T13:33:30.012Z",
+        "updated_at": "2024-02-29T13:33:30.012Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y{L"
+      },
+      {
+        "key": "d2ba9dbe196bb86c408e8f00366979ae29d69cd6",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "381:809",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/6aP/VnZ/GwAqLRrNQ2JK1WNC/381_809.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=52be141e05fc9899b1679e872f462f116463ec537328e28187d6bc220aa04cb7",
+        "name": "input/accent/stroke/selected",
+        "description": "",
+        "created_at": "2024-02-29T13:33:30.016Z",
+        "updated_at": "2024-02-29T13:33:30.016Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "~+"
+      },
+      {
+        "key": "c43b3bfb75f7d613947e8a9149c53f885c33a30a",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "34:395",
+        "style_type": "TEXT",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/EB8/3DG/KXAMbxRUfYkPbIEw/34_395.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9d2fffb62950292f960ae534bd2f01b9a637f22a233467b559805f5ce32e662f",
+        "name": "Field/12",
+        "description": "",
+        "created_at": "2024-02-29T13:33:30.021Z",
+        "updated_at": "2024-02-29T13:33:30.021Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "\"7h"
+      },
+      {
+        "key": "f8b14f0aafec2b4a8267bed43846138ddd61264f",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "354:495",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/GMG/Mff/eFijQkx1K5Ec0Et2/354_495.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4df8b41ed1f767f53b2f92bbefde35410f541c90601b9ea1d1ad307ea9f68dfb",
+        "name": "feedback/accent/text/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:30.039Z",
+        "updated_at": "2024-02-29T13:33:30.039Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "z+"
+      },
+      {
+        "key": "da81ef6c3cf0315032520b339f8cec2069f801c6",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:519",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/S77/RHP/ecAmtXUoYVhKzVYJ/330_519.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d9c6f337015b96c05033191ebc71951830b8bf3fbc1f3ca79c37d50a9e9e63d2",
+        "name": "button/accent/icon/disabled",
+        "description": "",
+        "created_at": "2024-02-29T13:33:30.045Z",
+        "updated_at": "2024-02-29T13:33:30.045Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "6y"
+      },
+      {
+        "key": "04da01bcd8f7232360014b7041cea08101d9a15a",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:496",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/4Uf/Cd9/hMy5hc7fQblWKiQH/338_496.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b2dc0f9c3b079c96785cc26e4e28970eaeadeb653d0539e8bc394ff5d4591988",
+        "name": "dropdown/surface/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:30.049Z",
+        "updated_at": "2024-02-29T13:33:30.049Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "s"
+      },
+      {
+        "key": "84927663e917e708565290e48165397d4ae797e6",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "338:483",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/QVJ/1aM/1j9SwfZdZgQlMWDt/338_483.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d5d39e3d9ffebe2ad722ad3892ff599383b994681762fd39eda85053c5d5696d",
+        "name": "input/neutral/surface/error",
+        "description": "",
+        "created_at": "2024-02-29T13:33:30.054Z",
+        "updated_at": "2024-02-29T13:33:30.054Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "Y}f"
+      },
+      {
+        "key": "5f3b1526c6ed0976b88ed7a67a9a32ab1a35bfd0",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "354:490",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/BfM/oM2/pspqP1j8H157GcTR/354_490.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5e2134a8df589113af749e55acb88d37150d3e55eef300454ee3b181984ef592",
+        "name": "feedback/info/symbol/default",
+        "description": "",
+        "created_at": "2024-02-29T13:33:30.059Z",
+        "updated_at": "2024-02-29T13:33:30.059Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "~#"
+      },
+      {
+        "key": "aac7cf63c37eb53b385c60a630474ed31b658b16",
+        "file_key": "HuzQwniEZw81EOhWHEGa5J",
+        "node_id": "330:516",
+        "style_type": "FILL",
+        "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/UIJ/NH6/kxJd8qkNiNDpbseb/330_516.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCXBZQTRO6%2F20240229%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20240229T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4937e401ecf2ad046dd72bc657e8cf43fc4bf5f9c133e34f768a8a128a5ea4d8",
+        "name": "button/neutral/surface/pressed",
+        "description": "",
+        "created_at": "2024-02-29T13:33:30.064Z",
+        "updated_at": "2024-02-29T13:33:30.064Z",
+        "user": {
+          "id": "984371869052309736",
+          "handle": "Jerzy Meteor",
+          "img_url": "https://www.gravatar.com/avatar/26a71eafe9603cb8dcfb7a4e8a3e5f55?size=240&default=https%3A%2F%2Fs3-alpha.figma.com%2Fstatic%2Fuser_j_v2.png"
+        },
+        "sort_position": "N"
+      }
+    ]
+  },
+  "i18n": null
+}
