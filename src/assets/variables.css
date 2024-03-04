@@ -15,7 +15,7 @@
   --button-accent-text-disabled: #5f629f;
   --button-accent-text-hover: #4147d5;
   --button-accent-text-pressed: #2d33b7;
-  --button-default-default: #000000;
+  --button-default: #000000;
   --button-default-link: #000000;
   --button-neutral-icon: #ffffff;
   --button-neutral-icon-disabled: #ffffff;
@@ -35,7 +35,7 @@
   --button-secondary-shadow: #d9d9d9;
   --button-secondary-shadow-disabled: #d9d9d9;
   --button-secondary-shadow-hover: #d9d9d9;
-  --button-small-default: #000000;
+  --button-small: #000000;
   --button-small-link: #000000;
   --dropdown-stroke-selected: #4147d5;
   --dropdown-surface: #ffffff;
