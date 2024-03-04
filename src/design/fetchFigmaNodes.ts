@@ -1,10 +1,10 @@
 import fetch from 'node-fetch'
-import { GetFileNodesResponse } from '@figma/rest-api-spec'
+import { GetFileNodesResponse, Node } from '@figma/rest-api-spec'
 
 const fetchFigmaNodes = async (
   fileId: string,
   nodeIds: string[]
-): Promise<{ [key: string]: any } | undefined> => {
+): Promise<Node[] | undefined> => {
   const URL = `https://api.figma.com/v1/files/${fileId}/nodes?ids=${nodeIds.join(
     ','
   )}`
@@ -23,7 +23,9 @@ const fetchFigmaNodes = async (
     const data = await response.json()
     const figmaNodesResponse = data as GetFileNodesResponse
 
-    return figmaNodesResponse.nodes
+    return Object.values(figmaNodesResponse.nodes).map(
+      ({ document }) => document
+    )
   } catch (error) {
     console.error(error)
   }

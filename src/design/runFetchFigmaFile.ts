@@ -1,12 +1,19 @@
 import fetchFigmaStyles from './fetchFigmaStyles.ts'
 import fetchFigmaNodes from './fetchFigmaNodes.ts'
 import { PublishedStyle } from '@figma/rest-api-spec'
+import { StyleNode } from './types/StyleNode.ts'
+import { DesignToken } from './types/DesignToken.ts'
+import { parseTokenValue } from './helpers/parseTokenValue.ts'
+import { parseTokenName } from './helpers/parseTokenName.ts'
+import { generateCssVariables } from './helpers/generateCssVariables.ts'
+import { writeFile } from 'fs/promises'
 
 // const FILE_ID = '5c22sZuGvYByweBe0kgCbY' // jacob
-const FILE_ID = 'HuzQwniEZw81EOhWHEGa5J' // moje
+const FILE_ID = 'HuzQwniEZw81EOhWHEGa5J'
 
-async function getFile() {
+;(async () => {
   const styles = await fetchFigmaStyles(FILE_ID)
+  // console.log(styles)
 
   if (!styles) return
 
@@ -14,36 +21,26 @@ async function getFile() {
   // console.log(styleNodeIds)
 
   const nodesData = await fetchFigmaNodes(FILE_ID, styleNodeIds)
-  console.log(nodesData)
-  // const { document, styles } = response
-  // console.log(response.document)
-  // console.log()
-  // const mappedStyles = mapFillStyles({ styles })
-  // console.log(mappedStyles)
-  // findFills(document)
-  // console.log(findFills(document))
-  // const result = mapStyleToNode(document, mappedStyles)
-  // console.log(result)
-  // const parsedColors = result.map(({ name, color }) => ({
-  //   name: parseTokenName(name),
-  //   color: parseColor(color),
-  // }))
-}
+  // console.log(nodesData)
 
-// const parseColor = (color) => {
-//   return `rgba(${Math.floor(color.r * 255)}, ${Math.floor(
-//     color.g * 255
-//   )}, ${Math.floor(color.b * 255)}, ${color.a})`
-// }
-//
-// const parseTokenName = (name) => {
-//   const parts = name.split('/')
-//
-//   if (parts[parts.length - 1] === 'default') {
-//     parts.pop()
-//   }
-//
-//   return parts.join('-')
-// }
+  if (!nodesData) return
 
-await getFile()
+  const tokens: DesignToken[] = nodesData
+    ?.map((node) => {
+      const styleNode = node as StyleNode
+
+      if (styleNode.fills) {
+        const fills = styleNode.fills
+
+        return {
+          id: styleNode.id,
+          name: parseTokenName(styleNode.name),
+          value: parseTokenValue(fills[0].color),
+        }
+      }
+    })
+    .filter(Boolean) as any[]
+  // console.log(tokens)
+
+  await writeFile('src/assets/variables.css', generateCssVariables(tokens))
+})()
