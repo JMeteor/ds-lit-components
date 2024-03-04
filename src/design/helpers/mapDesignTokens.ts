@@ -1,10 +1,11 @@
 import { Node } from '@figma/rest-api-spec'
 import { DesignToken } from '../types/DesignToken.ts'
 import { StyleNode } from '../types/StyleNode.ts'
+import { ColorMode } from '../enums/ColorMode.enum.ts'
 import { parseTokenName } from './parseTokenName.ts'
-import { ColorMode, parseTokenValue } from './parseTokenValue.ts'
+import { parseTokenValue } from './parseTokenValue.ts'
 
-export const generateDesignTokens = (nodesData: Node[]): DesignToken[] => {
+export const mapDesignTokens = (nodesData: Node[]): DesignToken[] => {
   return nodesData
     ?.map((node) => {
       const styleNode = node as StyleNode

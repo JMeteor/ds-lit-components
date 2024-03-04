@@ -5,13 +5,13 @@ import { generateCssVariables } from './../generateCssVariables.ts'
 describe('generateCssVariables', () => {
   it('should generate correct CSS variables', () => {
     const tokens: DesignToken[] = [
-      { id: '1', name: 'color-primary', value: '#ff0000' },
-      { id: '2', name: 'color-secondary', value: '#00ff00' },
+      { id: '1', name: 'color-brand', value: '#ff0000' },
+      { id: '2', name: 'color-neutral', value: '#00ff00' },
     ]
 
     const result = generateCssVariables(tokens)
 
-    const expected = `:root {\n  --color-primary: #ff0000;\n  --color-secondary: #00ff00;\n}`
+    const expected = `:root {\n  --color-brand: #ff0000;\n  --color-neutral: #00ff00;\n}`
 
     expect(result).toEqual(expected)
   })

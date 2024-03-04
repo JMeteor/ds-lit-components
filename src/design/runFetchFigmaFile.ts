@@ -1,6 +1,6 @@
 import fetchFigmaStyles from './fetchFigmaStyles.ts'
 import fetchFigmaNodes from './fetchFigmaNodes.ts'
-import { generateDesignTokens } from './helpers/mapDesignTokens.ts'
+import { mapDesignTokens } from './helpers/mapDesignTokens.ts'
 import { generateCssVariables } from './helpers/generateCssVariables.ts'
 import { writeFile } from 'fs/promises'
 
@@ -21,7 +21,7 @@ const FILE_ID = 'HuzQwniEZw81EOhWHEGa5J'
 
   if (!nodesData) return
 
-  const designTokens = generateDesignTokens(nodesData)
+  const designTokens = mapDesignTokens(nodesData)
   // console.log(designTokens)
 
   await writeFile(
