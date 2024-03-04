@@ -1,4 +1,4 @@
-import { DesignToken } from '../types/DesignToken.ts'
+import { DesignToken } from '@d/types/DesignToken.ts'
 
 export const generateCssVariables = (tokens: DesignToken[]): string => {
   tokens.sort((a, b) => a.name.localeCompare(b.name))

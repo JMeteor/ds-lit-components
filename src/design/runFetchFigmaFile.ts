@@ -1,7 +1,7 @@
-import { mapDesignTokens } from './helpers/mapDesignTokens.ts'
-import { generateCssVariables } from './helpers/generateCssVariables.ts'
+import { mapDesignTokens } from '@d/helpers/mapDesignTokens.ts'
+import { generateCssVariables } from '@d/helpers/generateCssVariables.ts'
+import FigmaService from '@d/services/FigmaService.ts'
 import { writeFile } from 'fs/promises'
-import FigmaService from './Figma.service.ts'
 
 // const FILE_ID = '5c22sZuGvYByweBe0kgCbY' // jacob
 const FILE_ID = 'HuzQwniEZw81EOhWHEGa5J'
@@ -18,7 +18,6 @@ const figmaService = new FigmaService()
   // console.log(styleNodeIds)
 
   const nodesData = await figmaService.fetchNodes(FILE_ID, styleNodeIds)
-  // const nodesData = await fetchFigmaNodes(FILE_ID, styleNodeIds)
   // console.log(nodesData)
 
   if (!nodesData) return

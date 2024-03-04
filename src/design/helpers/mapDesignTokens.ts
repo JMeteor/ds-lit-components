@@ -1,7 +1,7 @@
 import { Node } from '@figma/rest-api-spec'
-import { DesignToken } from '../types/DesignToken.ts'
-import { StyleNode } from '../types/StyleNode.ts'
-import { ColorMode } from '../enums/ColorMode.enum.ts'
+import { DesignToken } from '@d/types/DesignToken.ts'
+import { StyleNode } from '@d/types/StyleNode.ts'
+import { ColorMode } from '@d/enums/ColorMode.enum.ts'
 import { parseTokenName } from './parseTokenName.ts'
 import { parseTokenValue } from './parseTokenValue.ts'
 
