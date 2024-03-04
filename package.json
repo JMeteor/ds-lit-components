@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@floating-ui/dom": "^1.4.5",
+    "@open-wc/lit-helpers": "^0.4.0-next.1",
     "dotenv": "^16.4.5",
     "lit": "^2.7.5"
   },

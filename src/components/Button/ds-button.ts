@@ -1,155 +1,159 @@
-import { css, html, LitElement } from 'lit'
-import { customElement, property } from 'lit/decorators.js'
-import { classMap } from 'lit/directives/class-map.js'
+import { css, html, LitElement } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 
 @customElement('ds-button')
 export class DsButton extends LitElement {
-  @property({ type: String })
-  size = 'md'
+  @property({ type: String, reflect: true })
+  size = 'md';
 
-  @property({ type: String })
-  hierarchy = 'primary'
+  @property({ type: String, reflect: true })
+  hierarchy = 'primary';
 
-  @property({ type: String })
-  type = 'filled'
-
-  @property({ type: Boolean })
-  iconBefore = false
+  @property({ type: String, reflect: true })
+  type = 'filled';
 
   @property({ type: Boolean })
-  iconAfter = false
+  iconBefore = false;
+
+  @property({ type: Boolean, attribute: 'dupa' })
+  iconAfter = false;
 
   @property({ type: Boolean, reflect: true })
-  disabled = false
+  disabled = false;
 
   constructor() {
-    super()
+    super();
   }
 
   render() {
-    const classes = {
-      button: true,
-      [`button--${this.size}`]: ['md', 'sm'].includes(this.size),
-      [`button--${this.hierarchy}`]: ['primary', 'secondary'].includes(
-        this.hierarchy
-      ),
-      [`button--${this.type}`]: ['filled', 'outlined'].includes(this.type),
-    }
-
     return html`
-      <button class=${classMap(classes)} ?disabled=${this.disabled}>
+      <div class="button" .tabIndex="${this.disabled ? -1 : 0}">
         <slot name="iconBefore"></slot>
         <slot></slot>
         <slot name="iconAfter"></slot>
-      </button>
-    `
+      </div>
+    `;
   }
 
   static styles = css`
-    .button {
-      border-radius: 8px;
-      border-width: 1px;
-      border-style: solid;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 12px 24px;
-
-      font-family: var(--font-inter);
-      font-size: 16px;
+    :host {
+      font-family: 'Inter', sans-serif;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-
-      &:focus {
-        outline: none;
-      }
-
-      &.button--primary {
-        background: var(--primary-700);
-        border-color: var(--primary-700);
-        color: var(--primary-100);
-
-        &:hover {
-          background: var(--primary-500);
-          border-color: var(--primary-500);
-        }
-
-        &:focus {
-          background: var(--primary-500);
-          border-color: var(--primary-700);
-        }
-      }
-
-      &.button--outlined {
-        background: white;
-        border-color: var(--primary-700);
-        color: var(--primary-700);
-
-        &:hover {
-          background: var(--primary-100);
-          border-color: var(--primary-500);
-        }
-      }
-
-      &.button--secondary {
-        background: var(--secondary-700);
-        border-color: var(--secondary-700);
-        color: var(--secondary-100);
-
-        &:hover {
-          background: var(--secondary-500);
-          border-color: var(--secondary-500);
-        }
-
-        &:focus {
-          background: var(--secondary-500);
-          border-color: var(--secondary-700);
-        }
-
-        &.button--outlined {
-          background: white;
-          border-color: var(--secondary-700);
-          color: var(--secondary-700);
-
-          &:hover {
-            background: var(--secondary-100);
-            border-color: var(--secondary-500);
-          }
-        }
-      }
-
-      &.button--sm {
-        border-radius: 6px;
-        font-size: 14px;
-        padding: 8px 16px;
-      }
+      outline: none;
     }
 
-    :host([disabled]) .button {
-      pointer-events: none;
-      &.button--primary {
-        background: var(--primary-300);
-        border-color: var(--primary-300);
-      }
-      &.button--outlined {
-        background: white;
-        border-color: var(--primary-300);
-        color: var(--primary-500);
-        & .icon {
-          background: var(--primary-500);
-        }
-      }
-      &.button--secondary {
-        background: var(--secondary-300);
-        border-color: var(--secondary-300);
-        &.button--outlined {
-          background: white;
-          border-color: var(--secondary-300);
-          color: var(--secondary-500);
-        }
-      }
+    :host .button {
+      border-style: solid;
+      border-width: 1px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
     }
-  `
+
+    :host .button:focus-visible {
+      outline: none !important;
+    }
+
+    :host([size='md']) .button {
+      border-radius: 8px;
+      font-size: 16px;
+      padding: 12px 24px;
+    }
+
+    :host([size='sm']) .button {
+      border-radius: 6px;
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+
+    :host([hierarchy='primary'][type='filled']) .button {
+      background: var(--ds-action-primary-surface);
+      border-color: transparent;
+      color: var(--ds-action-primary-text);
+    }
+
+    :host([hierarchy='primary'][type='filled']:hover) .button {
+      background: var(--ds-action-primary-surface-hover);
+    }
+
+    :host([hierarchy='primary'][type='filled']:focus) .button {
+      background: var(--ds-action-primary-surface-focus);
+      border-color: var(--ds-action-primary-stroke-focus);
+    }
+
+    :host([hierarchy='primary'][type='filled'][disabled]) .button {
+      background: var(--ds-action-primary-surface-disabled);
+      color: var(--ds-action-primary-text-disabled);
+    }
+
+    :host([hierarchy='primary'][type='outlined']) .button {
+      background: var(--ds-action-primary-surface-alternative);
+      border-color: var(--ds-action-primary-stroke-alternative);
+      color: var(--ds-action-primary-text-alternative);
+    }
+
+    :host([hierarchy='primary'][type='outlined']:hover) .button {
+      background: var(--ds-action-primary-surface-hover-alternative);
+      border-color: var(--ds-action-primary-stroke-hover-alternative);
+      color: var(--ds-action-primary-text-hover-alternative);
+    }
+
+    :host([hierarchy='primary'][type='outlined']:focus) .button {
+      background: var(--ds-action-primary-surface-focus-alternative);
+      border-color: var(--ds-action-primary-stroke-focus-alternative);
+      color: var(--ds-action-primary-text-focus-alternative);
+    }
+
+    :host([hierarchy='primary'][type='outlined'][disabled]) .button {
+      background: var(--ds-action-primary-surface-disabled-alternative);
+      border-color: var(--ds-action-primary-stroke-disabled-alternative);
+      color: var(--ds-action-primary-text-disabled-alternative);
+    }
+
+    :host([hierarchy='secondary'][type='filled']) .button {
+      background: var(--ds-action-secondary-surface);
+      border-color: transparent;
+      color: var(--ds-action-secondary-text);
+    }
+
+    :host([hierarchy='secondary'][type='filled']:hover) .button {
+      background: var(--ds-action-secondary-surface-hover);
+    }
+
+    :host([hierarchy='secondary'][type='filled']:focus) .button {
+      background: var(--ds-action-secondary-surface-focus);
+      border-color: var(--ds-action-secondary-stroke-focus);
+    }
+
+    :host([hierarchy='secondary'][type='filled'][disabled]) .button {
+      background: var(--ds-action-secondary-surface-disabled);
+      color: var(--ds-action-secondary-text-disabled);
+    }
+
+    :host([hierarchy='secondary'][type='outlined']) .button {
+      background: var(--ds-action-secondary-surface-alternative);
+      border-color: var(--ds-action-secondary-stroke-alternative);
+      color: var(--ds-action-secondary-text-alternative);
+    }
+
+    :host([hierarchy='secondary'][type='outlined']:hover) .button {
+      background: var(--ds-action-secondary-surface-hover-alternative);
+      border-color: var(--ds-action-secondary-stroke-hover-alternative);
+      color: var(--ds-action-secondary-text-hover-alternative);
+    }
+
+    :host([hierarchy='secondary'][type='outlined']:focus) .button {
+      background: var(--ds-action-secondary-surface-focus-alternative);
+      border-color: var(--ds-action-secondary-stroke-focus-alternative);
+      color: var(--ds-action-secondary-text-focus-alternative);
+    }
+
+    :host([hierarchy='secondary'][type='outlined'][disabled]) .button {
+      background: var(--ds-action-secondary-surface-disabled-alternative);
+      border-color: var(--ds-action-secondary-stroke-disabled-alternative);
+      color: var(--ds-action-secondary-text-disabled-alternative);
+    }
+  `;
 }

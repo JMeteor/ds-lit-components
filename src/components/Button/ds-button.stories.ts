@@ -2,6 +2,7 @@ import { html } from 'lit'
 import { Meta, StoryFn } from '@storybook/web-components'
 import './ds-button'
 import '../Icon/ds-icon'
+// import { spreadProps } from '@open-wc/lit-helpers'
 
 const meta = {
   title: 'Components/Button',
@@ -46,7 +47,7 @@ export const Button: StoryFn = (args) => {
     <ds-button
       .disabled="${args.disabled}"
       .size="${args.size}"
-      .hierarchy="${args.hierarchy || 'primary'}"
+      .hierarchy="${args.hierarchy}"
       .type="${args.type}"
       .iconBefore="${args.iconBefore}"
       .iconAfter="${args.iconAfter}"
