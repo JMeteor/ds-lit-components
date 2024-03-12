@@ -3,23 +3,17 @@ import { customElement, property } from 'lit/decorators.js';
 
 @customElement('ds-button')
 export class DsButton extends LitElement {
-  @property({ type: String, reflect: true })
-  size = 'md';
+  @property({ type: Boolean, reflect: true })
+  disabled = false;
 
   @property({ type: String, reflect: true })
   hierarchy = 'primary';
 
   @property({ type: String, reflect: true })
+  size = 'md';
+
+  @property({ type: String, reflect: true })
   type = 'filled';
-
-  @property({ type: Boolean })
-  iconBefore = false;
-
-  @property({ type: Boolean, attribute: 'dupa' })
-  iconAfter = false;
-
-  @property({ type: Boolean, reflect: true })
-  disabled = false;
 
   constructor() {
     super();
