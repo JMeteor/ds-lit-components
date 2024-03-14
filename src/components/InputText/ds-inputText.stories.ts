@@ -1,6 +1,7 @@
-import { html } from 'lit'
-import { Meta, StoryFn } from '@storybook/web-components'
-import './ds-inputText'
+import { html } from 'lit';
+import { Meta, StoryFn } from '@storybook/web-components';
+import './ds-inputText';
+import '../Icon/ds-icon';
 
 const meta = {
   title: 'Components/InputText',
@@ -11,10 +12,7 @@ const meta = {
     value: {
       control: { type: 'text' },
     },
-    hint: {
-      control: { type: 'text' },
-    },
-    error: {
+    helperText: {
       control: { type: 'text' },
     },
     size: {
@@ -25,39 +23,51 @@ const meta = {
       control: { type: 'radio' },
       options: ['primary', 'secondary'],
     },
-    showLabel: {
-      control: { type: 'boolean' },
-    },
-    showIcon: {
-      control: { type: 'boolean' },
-    },
-    showHint: {
-      control: { type: 'boolean' },
-    },
-    showError: {
-      control: { type: 'boolean' },
-    },
     disabled: {
       control: { type: 'boolean' },
     },
+    error: {
+      control: { type: 'boolean' },
+    },
   },
-} satisfies Meta
-export default meta
+} satisfies Meta;
+export default meta;
 
-export const InputText: StoryFn = (args) => html`
-  <ds-input-text
-    .disabled="${args.disabled}"
-    .size="${args.size}"
-    .hierarchy="${args.hierarchy}"
-    .showLabel="${args.showLabel}"
-    .showIcon="${args.showIcon}"
-    .showHint="${args.showHint}"
-    .showError="${args.showError}"
-    .value="${args.value}"
-    @input="${() => console.log('Input event fired!')}"
-  >
-    <span slot="label">${args.label || 'Select label'}</span>
-    <span slot="hint">${args.hint || 'Hint message'}</span>
-    <span slot="error">${args.error || 'Error message'}</span>
-  </ds-input-text>
-`
+export const InputText: StoryFn = (args) => {
+  const iconColor = () => {
+    if (args.error) {
+      return 'var(--ds-input-danger-icon)';
+    }
+    if (args.disabled && args.hierarchy === 'primary') {
+      return 'var(--ds-input-primary-icon-disabled)';
+    }
+    if (args.disabled && args.hierarchy === 'secondary') {
+      return 'var(--ds-input-secondary-icon-disabled)';
+    }
+    if (args.hierarchy === 'primary') {
+      return 'var(--ds-input-primary-icon)';
+    }
+    if (args.hierarchy === 'secondary') {
+      return 'var(--ds-input-secondary-icon)';
+    }
+  };
+
+  return html`
+    <ds-input-text
+      .disabled="${args.disabled}"
+      .size="${args.size}"
+      .hierarchy="${args.hierarchy}"
+      .error="${args.error}"
+      .value="${args.value}"
+      @input="${() => console.log('Input event fired!')}"
+    >
+      <span slot="label">${args.label || 'Select label'}</span>
+      <span slot="helperText">${args.helperText || 'Helper text'}</span>
+      <span slot="iconRight"><ds-icon
+        .size=${args.size}
+        name="info-circle"
+        .color=${iconColor()}
+    </span>
+    </ds-input-text>
+  `;
+};
