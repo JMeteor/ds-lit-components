@@ -67,7 +67,7 @@ export const InputText: StoryFn = (args) => {
         .size=${args.size}
         name="info-circle"
         .color=${iconColor()}
-    </span>
+      </span>
     </ds-input-text>
   `;
 };
