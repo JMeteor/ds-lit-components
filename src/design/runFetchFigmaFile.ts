@@ -4,13 +4,14 @@ import FigmaService from '@d/services/FigmaService.ts';
 import { writeFile } from 'fs/promises';
 
 // const FILE_ID = '5c22sZuGvYByweBe0kgCbY' // jacobe
-const FILE_ID = 'MYI5LujaJMRevufayyMMl4'; // jacob backup
+// const FILE_ID = 'MYI5LujaJMRevufayyMMl4'; // jacob backup
+const FILE_ID = 'IRdkRXDkBsjEqVestx6Bbt'; // jacob backup
 
 const figmaService = new FigmaService();
 
 (async () => {
   const styles = await figmaService.fetchStyles(FILE_ID);
-  console.log(styles);
+  // console.log(styles);
 
   if (!styles) return;
 

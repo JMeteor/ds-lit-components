@@ -1,188 +1,151 @@
-import { css, html, LitElement } from 'lit'
-import { customElement, property } from 'lit/decorators.js'
-import { classMap } from 'lit/directives/class-map.js'
-import { computePosition, offset, size } from '@floating-ui/dom'
-import { MaybeHTMLElement } from '../../helpers/types.ts'
+import { css, html, LitElement } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
+import { computePosition, offset, size } from '@floating-ui/dom';
+import { MaybeHTMLElement } from '@/helpers/types.ts';
 
 @customElement('ds-select')
 export class DsSelect extends LitElement {
-  @property({ type: String })
-  size = 'md'
-
-  @property({ type: String })
-  hierarchy = 'primary'
-
-  @property({ type: Boolean })
-  showLabel = false
-
-  @property({ type: Boolean })
-  showHint = false
-
-  @property({ type: Boolean })
-  showIcon = true
-
-  @property({ type: Boolean })
-  showError = true
+  @property({ type: Boolean, reflect: true })
+  disabled = false;
 
   @property({ type: Boolean, reflect: true })
-  disabled = false
+  error = false;
+
+  @property({ type: String, reflect: true })
+  hierarchy = 'primary';
+
+  @property({ type: String, reflect: true })
+  size = 'md';
 
   @property({ type: Array })
-  options = []
+  options = [];
 
   @property({ type: String })
-  placeholder = 'Placeholder'
+  placeholder = 'Placeholder';
 
   @property({ type: String })
-  selected = ''
+  selected = '';
 
   @property({ type: Boolean })
-  private dropdownOpen = false
+  private dropdownOpen = false;
 
   firstUpdated() {
-    const input: MaybeHTMLElement =
-      this.shadowRoot?.querySelector('.select_wrapper')
+    const input: MaybeHTMLElement = this.shadowRoot?.querySelector('.wrapper');
     const dropdown: MaybeHTMLElement =
-      this.shadowRoot?.querySelector('.select_dropdown')
+      this.shadowRoot?.querySelector('.dropdown');
 
     if (input && dropdown) {
       computePosition(input, dropdown, {
         placement: 'bottom-start',
         middleware: [
-          offset(4),
+          offset(1),
           size({
             apply({ rects }) {
               Object.assign(dropdown.style, {
                 width: `${rects.reference.width}px`,
-              })
+              });
             },
           }),
         ],
       }).then(({ x, y }) => {
+        console.log(x, y);
         Object.assign(dropdown.style, {
           left: `${x}px`,
           top: `${y}px`,
-        })
-      })
+        });
+      });
     }
   }
 
   connectedCallback() {
-    super.connectedCallback()
-    window.addEventListener('click', this.closeDropdown)
+    super.connectedCallback();
+    window.addEventListener('click', this.closeDropdown);
   }
 
   disconnectedCallback() {
-    super.disconnectedCallback()
-    window.removeEventListener('click', this.closeDropdown)
+    super.disconnectedCallback();
+    window.removeEventListener('click', this.closeDropdown);
   }
 
   private onClick(event: Event) {
-    event.stopPropagation()
-    const value = (event.target as HTMLLIElement).dataset.value
+    event.stopPropagation();
+    const value = (event.target as HTMLLIElement).dataset.value;
     if (value !== undefined) {
-      this.selected = value
-      this.showError = false
+      this.selected = value;
+      this.error = false;
     }
-    this.requestUpdate()
-    this.closeDropdown()
+    this.requestUpdate();
+    this.closeDropdown();
   }
 
   private toggleDropdown(event: Event) {
-    event.stopPropagation()
-    this.dropdownOpen = !this.dropdownOpen
+    event.stopPropagation();
+
+    if (!this.disabled) {
+      this.dropdownOpen = !this.dropdownOpen;
+    }
   }
 
   private closeDropdown = () => {
-    this.dropdownOpen = false
-  }
-
-  _iconColor() {
-    if (this.showError) {
-      return 'var(--base-error)'
-    }
-    if (this.hierarchy === 'secondary' && this.disabled) {
-      return 'var(--secondary-300)'
-    }
-    if (this.hierarchy === 'secondary') {
-      return 'var(--secondary-700)'
-    }
-    if (this.disabled) {
-      return 'var(--primary-300)'
-    }
-    return 'var(--primary-700)'
-  }
+    this.dropdownOpen = false;
+  };
 
   render() {
-    const classes = {
-      select: true,
-      'select--md': this.size === 'md',
-      'select--sm': this.size === 'sm',
-      'select--primary': this.hierarchy === 'primary',
-      'select--secondary': this.hierarchy === 'secondary',
-      'select--disabled': this.disabled,
-      'select--error': this.showError,
-    }
-
-    return html`<div class=${classMap(classes)} @click="${this.toggleDropdown}">
-      ${this.showLabel
-        ? html`<label class="select_label"><slot name="label"></slot></label>`
-        : ''}
-      <div class="select_wrapper">
+    return html` <div class="wrapper">
+      <label>
+        <slot name="label"></slot>
+      </label>
+      <div class="input-wrapper" @click="${this.toggleDropdown}">
         <input
-          class="select_input"
-          type="text"
-          readonly
-          placeholder=${this.placeholder}
-          value="${this.selected}"
           ?disabled=${this.disabled}
+          placeholder=${this.placeholder}
+          readonly
+          type="text"
+          value="${this.selected}"
         />
-        ${this.showIcon
-          ? html` <ds-icon
-              .size=${this.size}
-              .name=${'chevron-down'}
-              .color=${this._iconColor()}
-            ></ds-icon>`
-          : ''}
+        <slot name="iconRight"></slot>
+        <ul
+          @click="${this.onClick}"
+          class="dropdown ${this.dropdownOpen ? 'open' : ''}"
+        >
+          ${this.options.map(
+            (option) =>
+              html`<li
+                class="dropdown-item ${this.selected === option
+                  ? 'selected'
+                  : ''}"
+                data-value=${option}
+              >
+                ${option}
+              </li>`
+          )}
+        </ul>
       </div>
-      <ul
-        @click="${this.onClick}"
-        class="select_dropdown ${this.dropdownOpen
-          ? 'select_dropdown--open'
-          : ''}"
-      >
-        ${this.options.map(
-          (option) =>
-            html`<li class="select_dropdown_item" data-value=${option}>
-              ${option}
-            </li>`
-        )}
-      </ul>
-      ${this.showError
-        ? html`<p class="select_error"><slot name="error"></slot></p>`
-        : this.showHint
-        ? html`<p class="select_hint"><slot name="hint"></slot></p>`
-        : ''}
-    </div>`
+      <p class="helperText ${this.error ? 'error' : 'hint'}">
+        <slot name="helperText"></slot>
+      </p>
+    </div>`;
   }
 
   static styles = css`
-    .select_wrapper {
+    :host {
+      font-family: 'Inter', sans-serif;
+    }
+    .wrapper {
       display: inline-flex;
-      align-items: center;
+      flex-direction: column;
       position: relative;
     }
-    .select_label {
-      color: var(--primary-700);
+    :host label {
       display: block;
       font-size: 14px;
       font-weight: 400;
       line-height: normal;
       margin-bottom: 4px;
     }
-    .select_input {
+
+    :host input {
       box-sizing: border-box;
-      border-color: var(--primary-700);
       border-radius: 8px;
       border-style: solid;
       border-width: 1px;
@@ -191,36 +154,87 @@ export class DsSelect extends LitElement {
       min-width: 200px;
       height: 40px;
       padding: 10px 16px;
-      &::placeholder {
-        color: var(--primary-300);
-      }
-      &:focus {
-        outline: none;
-      }
     }
-    ds-icon {
-      cursor: pointer;
+    .input-wrapper {
+      position: relative;
+    }
+
+    .input-wrapper ::slotted([slot='iconRight']) {
       position: absolute;
-      right: 16px;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
     }
-    .select_hint,
-    .select_error {
+
+    :host([hierarchy='primary']) label {
+      color: var(--ds-input-primary-label);
+    }
+    :host([hierarchy='primary']) input {
+      border-color: var(--ds-input-primary-stroke);
+      color: var(--ds-input-primary-text);
+    }
+    :host([hierarchy='primary']) input::placeholder {
+      color: var(--ds-input-primary-placeholder);
+    }
+    :host([hierarchy='primary']) .hint {
+      color: var(--ds-feedback-primary-hint);
+    }
+    :host([hierarchy='primary'][disabled]) label {
+      color: var(--ds-input-primary-label-disabled);
+    }
+    :host([hierarchy='primary'][disabled]) input {
+      border-color: var(--ds-input-primary-stroke-disabled);
+      color: var(--ds-input-primary-text-disabled);
+    }
+    :host([hierarchy='primary'][disabled]) .hint {
+      color: var(--ds-feedback-primary-hint-disabled);
+    }
+
+    :host([hierarchy='secondary']) label {
+      color: var(--ds-input-secondary-label);
+    }
+    :host([hierarchy='secondary']) input {
+      border-color: var(--ds-input-secondary-stroke);
+      color: var(--ds-input-secondary-text);
+    }
+    :host([hierarchy='secondary']) input::placeholder {
+      color: var(--ds-input-secondary-placeholder);
+    }
+    :host([hierarchy='secondary']) .hint {
+      color: var(--ds-feedback-secondary-hint);
+    }
+    :host([hierarchy='secondary'][disabled]) label {
+      color: var(--ds-input-secondary-label-disabled);
+    }
+    :host([hierarchy='secondary'][disabled]) input {
+      border-color: var(--ds-input-secondary-stroke-disabled);
+      color: var(--ds-input-secondary-text-disabled);
+    }
+    :host([hierarchy='secondary'][disabled]) .hint {
+      color: var(--ds-feedback-secondary-hint-disabled);
+    }
+
+    :host([size='sm']) input {
+      height: 32px;
+    }
+
+    :host([error]) input {
+      border-color: var(--ds-input-danger-stroke);
+    }
+
+    .helperText {
       display: block;
       font-size: 12px;
       margin: 4px 0 0 0;
     }
-    .select_hint {
-      color: var(--primary-500);
-    }
-    .select_error {
-      color: var(--base-error);
+
+    .error {
+      color: var(--ds-feedback-danger-hint);
     }
 
-    .select_dropdown {
-      background: var(--base-white);
+    .dropdown {
+      background: var(--ds-dropdown-neutral-surface);
       position: absolute;
-      top: 0;
-      left: 0;
       z-index: 100;
       margin: 0;
       padding: 2px 0;
@@ -230,71 +244,38 @@ export class DsSelect extends LitElement {
       width: max-content;
       list-style: none;
       display: none;
-      &.select_dropdown--open {
+      &.open {
         display: block;
       }
     }
-    .select_dropdown_item {
+    .dropdown-item {
       cursor: pointer;
       font-size: 16px;
       padding: 6px 16px;
-      &:hover {
-        background: var(--primary-100);
+      position: relative;
+    }
+
+    .dropdown-item.selected::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 3px;
+    }
+
+    :host([hierarchy='primary']) .dropdown-item.selected {
+      color: var(--ds-dropdown-primary-text-selected);
+      &::before {
+        background: var(--ds-dropdown-primary-text-selected);
       }
     }
-    .select {
-      display: inline-block;
-      font-family: var(--font-inter);
-      &.select--sm {
-        & .select_input {
-          height: 32px;
-        }
-        & .select_dropdown_item {
-          padding: 3px 16px;
-        }
-      }
-      &.select--secondary {
-        & .select_label,
-        & .select_hint {
-          color: var(--secondary-700);
-        }
-        & .select_input {
-          border-color: var(--secondary-700);
-          &::placeholder {
-            color: var(--secondary-500);
-          }
-        }
-      }
-      &.select--disabled {
-        cursor: default;
-        pointer-events: none;
-        & .select_label,
-        & .select_hint,
-        & .select_input {
-          color: var(--primary-300);
-        }
-        & .select_input {
-          border-color: var(--primary-300);
-        }
-        &.select--secondary {
-          & .select_label,
-          & .select_hint,
-          & .select_input {
-            color: var(--secondary-300);
-          }
-          & .select_input {
-            border-color: var(--secondary-300);
-            &::placeholder {
-              color: var(--secondary-300);
-            }
-          }
-        }
-      }
-      &.select--error {
-        & .select_input {
-          border-color: var(--base-error);
-        }
+
+    :host([hierarchy='secondary']) .dropdown-item.selected {
+      color: var(--ds-dropdown-secondary-text-selected);
+      &::before {
+        background: var(--ds-dropdown-secondary-text-selected);
       }
     }
-  `
+  `;
 }
