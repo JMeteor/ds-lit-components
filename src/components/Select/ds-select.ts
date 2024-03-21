@@ -1,4 +1,4 @@
-import { css, html, LitElement } from 'lit';
+import { css, html, LitElement, PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { computePosition, offset, size } from '@floating-ui/dom';
 import { MaybeHTMLElement } from '@/helpers/types.ts';
@@ -29,31 +29,33 @@ export class DsSelect extends LitElement {
   @property({ type: Boolean })
   private dropdownOpen = false;
 
-  firstUpdated() {
-    const input: MaybeHTMLElement = this.shadowRoot?.querySelector('.wrapper');
-    const dropdown: MaybeHTMLElement =
-      this.shadowRoot?.querySelector('.dropdown');
+  async updated(changedProperties: PropertyValues) {
+    if (changedProperties.has('dropdownOpen') && this.dropdownOpen) {
+      const input: MaybeHTMLElement = this.shadowRoot?.querySelector('.input');
+      const dropdown: MaybeHTMLElement =
+        this.shadowRoot?.querySelector('.dropdown');
 
-    if (input && dropdown) {
-      computePosition(input, dropdown, {
-        placement: 'bottom-start',
-        middleware: [
-          offset(1),
-          size({
-            apply({ rects }) {
-              Object.assign(dropdown.style, {
-                width: `${rects.reference.width}px`,
-              });
-            },
-          }),
-        ],
-      }).then(({ x, y }) => {
-        console.log(x, y);
-        Object.assign(dropdown.style, {
-          left: `${x}px`,
-          top: `${y}px`,
+      if (input && dropdown) {
+        computePosition(input, dropdown, {
+          placement: 'bottom-start',
+          middleware: [
+            size({
+              apply({ rects }) {
+                Object.assign(dropdown.style, {
+                  width: `${rects.reference.width}px`,
+                });
+              },
+            }),
+            offset(1),
+          ],
+        }).then(({ x, y }) => {
+          console.log(x, y);
+          Object.assign(dropdown.style, {
+            left: `${x}px`,
+            top: `${y}px`,
+          });
         });
-      });
+      }
     }
   }
 
@@ -97,6 +99,7 @@ export class DsSelect extends LitElement {
       </label>
       <div class="input-wrapper" @click="${this.toggleDropdown}">
         <input
+          class="input"
           ?disabled=${this.disabled}
           placeholder=${this.placeholder}
           readonly
@@ -104,22 +107,24 @@ export class DsSelect extends LitElement {
           value="${this.selected}"
         />
         <slot name="iconRight"></slot>
-        <ul
+
+        <div
           @click="${this.onClick}"
           class="dropdown ${this.dropdownOpen ? 'open' : ''}"
         >
           ${this.options.map(
             (option) =>
-              html`<li
+              html`<div
                 class="dropdown-item ${this.selected === option
                   ? 'selected'
                   : ''}"
                 data-value=${option}
+                tabindex="0"
               >
                 ${option}
-              </li>`
+              </div>`
           )}
-        </ul>
+        </div>
       </div>
       <p class="helperText ${this.error ? 'error' : 'hint'}">
         <slot name="helperText"></slot>
@@ -235,7 +240,6 @@ export class DsSelect extends LitElement {
     .dropdown {
       background: var(--ds-dropdown-neutral-surface);
       position: absolute;
-      z-index: 100;
       margin: 0;
       padding: 2px 0;
       border-radius: 8px;
