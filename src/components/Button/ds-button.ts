@@ -31,11 +31,25 @@ export class DsButton extends LitElement {
 
   static styles = css`
     :host {
+      --button-padding-sm: 8px 16px;
+      --button-padding-md: 12px 24px;
       font-family: 'Inter', sans-serif;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
       outline: none;
+    }
+
+    :host([size='md']) .button {
+      border-radius: 8px;
+      font-size: 16px;
+      padding: var(--button-padding-md);
+    }
+
+    :host([size='sm']) .button {
+      border-radius: 6px;
+      font-size: 14px;
+      padding: var(--button-padding-sm);
     }
 
     :host .button {
@@ -48,18 +62,6 @@ export class DsButton extends LitElement {
 
     :host .button:focus-visible {
       outline: none !important;
-    }
-
-    :host([size='md']) .button {
-      border-radius: 8px;
-      font-size: 16px;
-      padding: 12px 24px;
-    }
-
-    :host([size='sm']) .button {
-      border-radius: 6px;
-      font-size: 14px;
-      padding: 8px 16px;
     }
 
     :host([hierarchy='primary'][type='filled']) .button {

@@ -1,5 +1,5 @@
-import type { Preview } from '@storybook/web-components'
-import '../src/styles/variables.css'
+import type { Preview } from '@storybook/web-components';
+import '../src/styles/variables.css';
 
 const preview: Preview = {
   parameters: {
@@ -11,6 +11,6 @@ const preview: Preview = {
       },
     },
   },
-}
+};
 
-export default preview
+export default preview;
