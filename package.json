@@ -1,5 +1,5 @@
 {
-  "name": "ds-lit-components",
+  "name": "ds",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,5 +12,11 @@
   "devDependencies": {
     "prettier": "3.0.0",
     "typescript": "^5.0.2"
-  }
+  },
+  "workspaces": [
+    "packages/components",
+    "packages/core",
+    "packages/docs",
+    "packages/storybook"
+  ]
 }

@@ -4,9 +4,16 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   build: {
     lib: {
-      entry: 'src/my-element.ts',
+      entry: {
+        index: 'src/index.ts', // good practice to import each components
+        button: 'src/Button/ds-button',
+        icon: 'src/Icon/ds-icon',
+        inputText: 'src/InputText/ds-inputText',
+        select: 'src/Select/ds-select',
+      },
       formats: ['es'],
-      fileName: (format) => `ds-components.${format}.js`,
+      // formats: ['es', 'cjs'],
+      // fileName: 'ds-components',
     },
     rollupOptions: {
       // If we want to publish standalone components we don't externalize lit,

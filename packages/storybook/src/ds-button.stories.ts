@@ -1,6 +1,7 @@
 import { html } from 'lit';
 import { Meta, StoryFn } from '@storybook/web-components';
-import { DsButton, DsIcon } from '@ds/components';
+// import '@ds/components/button';
+
 // import '../Icon/ds-icon';
 // import { spreadProps } from '@open-wc/lit-helpers'
 

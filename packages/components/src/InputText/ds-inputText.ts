@@ -1,5 +1,7 @@
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import '../Button/ds-button.ts'; // Recommended import
+// import { Button } from './../index.ts' <- not recommended
 
 @customElement('ds-input-text')
 export class DsInputText extends LitElement {

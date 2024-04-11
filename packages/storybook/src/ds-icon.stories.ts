@@ -1,6 +1,6 @@
 import { html } from 'lit';
 import { Meta, StoryFn } from '@storybook/web-components';
-import '../../components/src/Icon/ds-icon';
+import '@ds/components/src/Icon/ds-icon';
 
 const meta = {
   title: 'Components/Icon',

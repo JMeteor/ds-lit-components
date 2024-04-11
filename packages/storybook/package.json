@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "lit": "^2.7.5",
-    "@ds/components": "file:../components"
+    "@ds/components": "*"
   },
   "devDependencies": {
     "chromatic": "^6.19.9",

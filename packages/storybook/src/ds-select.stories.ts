@@ -1,6 +1,6 @@
 import { html } from 'lit';
 import { Meta, StoryFn } from '@storybook/web-components';
-import '../../components/src/Select/ds-select';
+import '@ds/components/src/Select/ds-select';
 
 const meta = {
   title: 'Components/Select',
