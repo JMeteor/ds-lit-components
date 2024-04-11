@@ -1,0 +1,21 @@
+{
+  "name": "@ds/core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "fetch-figma": "tsx src/design/runFetchFigmaFile.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@figma/rest-api-spec": "^0.10.0",
+    "node-fetch": "^3.3.2",
+    "tsx": "^4.7.1",
+    "vite": "^4.4.0",
+    "vitest": "^1.3.1"
+  },
+  "author": "",
+  "license": "ISC"
+}

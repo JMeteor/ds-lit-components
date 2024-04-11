@@ -1,7 +1,7 @@
-import { html } from 'lit'
-import { Meta, StoryFn } from '@storybook/web-components'
-import './ds-button'
-import '../Icon/ds-icon'
+import { html } from 'lit';
+import { Meta, StoryFn } from '@storybook/web-components';
+import { DsButton, DsIcon } from '@ds/components';
+// import '../Icon/ds-icon';
 // import { spreadProps } from '@open-wc/lit-helpers'
 
 const meta = {
@@ -32,16 +32,16 @@ const meta = {
       control: { type: 'boolean' },
     },
   },
-} satisfies Meta
-export default meta
+} satisfies Meta;
+export default meta;
 
 export const Button: StoryFn = (args) => {
   const iconBeforeHTML = args.iconBefore
     ? html`<ds-icon name="chevron-down"></ds-icon>`
-    : null
+    : null;
   const iconAfterHTML = args.iconAfter
     ? html`<ds-icon name="chevron-down"></ds-icon>`
-    : null
+    : null;
 
   return html`
     <ds-button
@@ -58,5 +58,5 @@ export const Button: StoryFn = (args) => {
       ${args.text || 'Button label'}
       <span slot="iconAfter">${iconAfterHTML}</span>
     </ds-button>
-  `
-}
+  `;
+};

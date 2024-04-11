@@ -4,41 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
     "format-check": "npx prettier --check ./",
-    "format-write": "npx prettier --write ./",
-    "chromatic": "npx chromatic --project-token=chpt_8f99a0637cb8f24",
-    "fetch-figma": "tsx src/design/runFetchFigmaFile.ts",
-    "figma-parser": "node src/design/runFigmaParser.js"
+    "format-write": "npx prettier --write ./"
   },
   "dependencies": {
-    "@floating-ui/dom": "^1.4.5",
-    "@open-wc/lit-helpers": "^0.4.0-next.1",
-    "dotenv": "^16.4.5",
-    "lit": "^2.7.5"
   },
   "devDependencies": {
-    "@figma/rest-api-spec": "^0.10.0",
-    "@ltd-toolbox/figma-parser": "^0.1.0-alpha.1",
-    "@storybook/addon-essentials": "^7.0.26",
-    "@storybook/addon-links": "^7.0.26",
-    "@storybook/blocks": "^7.0.26",
-    "@storybook/builder-vite": "^7.0.26",
-    "@storybook/web-components": "^7.0.26",
-    "@storybook/web-components-vite": "^7.0.26",
-    "chromatic": "^6.19.9",
-    "node-fetch": "^3.3.2",
     "prettier": "3.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "storybook": "^7.0.26",
-    "tsx": "^4.7.1",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.0",
-    "vitest": "^1.3.1"
+    "typescript": "^5.0.2"
   }
 }

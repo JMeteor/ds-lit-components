@@ -1,6 +1,6 @@
-import { html } from 'lit'
-import { Meta, StoryFn } from '@storybook/web-components'
-import './ds-icon'
+import { html } from 'lit';
+import { Meta, StoryFn } from '@storybook/web-components';
+import '../../components/src/Icon/ds-icon';
 
 const meta = {
   title: 'Components/Icon',
@@ -20,8 +20,8 @@ const meta = {
       },
     },
   },
-} satisfies Meta
-export default meta
+} satisfies Meta;
+export default meta;
 
 export const Icon: StoryFn = (args) => html`
   <ds-icon
@@ -29,4 +29,4 @@ export const Icon: StoryFn = (args) => html`
     .name="${args.name || 'chevron-down'}"
     .color="${args.color || 'var(--primary-700)'}"
   />
-`
+`;

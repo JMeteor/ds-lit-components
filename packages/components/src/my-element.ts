@@ -1,7 +1,5 @@
-import { LitElement, css, html } from 'lit'
-import { customElement, property } from 'lit/decorators.js'
-import litLogo from './assets/lit.svg'
-import viteLogo from '/vite.svg'
+import { LitElement, css, html } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 
 /**
  * An example element.
@@ -15,22 +13,22 @@ export class MyElement extends LitElement {
    * Copy for the read the docs hint.
    */
   @property()
-  docsHint = 'Click on the Vite and Lit logos to learn more'
+  docsHint = 'Click on the Vite and Lit logos to learn more';
 
   /**
    * The number of times the DsButton has been clicked.
    */
   @property({ type: Number })
-  count = 0
+  count = 0;
 
   render() {
     return html`
       <div>
         <a href="https://vitejs.dev" target="_blank">
-          <img src=${viteLogo} class="logo" alt="Vite logo" />
+          <img src="" class="logo" alt="Vite logo" />
         </a>
         <a href="https://lit.dev" target="_blank">
-          <img src=${litLogo} class="logo lit" alt="Lit logo" />
+          <img src="" class="logo lit" alt="Lit logo" />
         </a>
       </div>
       <slot></slot>
@@ -40,12 +38,11 @@ export class MyElement extends LitElement {
         </button>
       </div>
       <p class="read-the-docs">${this.docsHint}</p>
-    `
+    `;
   }
 
   private _onClick() {
-    console.log('figma', import.meta.env.FIGMA_ACCESS_TOKEN)
-    this.count++
+    this.count++;
   }
 
   static styles = css`
@@ -118,11 +115,11 @@ export class MyElement extends LitElement {
         background-color: #f9f9f9;
       }
     }
-  `
+  `;
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-element': MyElement
+    'my-element': MyElement;
   }
 }

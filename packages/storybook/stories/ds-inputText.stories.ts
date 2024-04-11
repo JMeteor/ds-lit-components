@@ -1,14 +1,18 @@
 import { html } from 'lit';
 import { Meta, StoryFn } from '@storybook/web-components';
-import './ds-select';
+import '../../components/src/InputText/ds-inputText';
+import '../../components/src/Icon/ds-icon';
 
 const meta = {
-  title: 'Components/Select',
+  title: 'Components/InputText',
   argTypes: {
     label: {
       control: { type: 'text' },
     },
-    hint: {
+    value: {
+      control: { type: 'text' },
+    },
+    helperText: {
       control: { type: 'text' },
     },
     size: {
@@ -19,17 +23,17 @@ const meta = {
       control: { type: 'radio' },
       options: ['primary', 'secondary'],
     },
-    error: {
+    disabled: {
       control: { type: 'boolean' },
     },
-    disabled: {
+    error: {
       control: { type: 'boolean' },
     },
   },
 } satisfies Meta;
 export default meta;
 
-export const Select: StoryFn = (args) => {
+export const InputText: StoryFn = (args) => {
   const iconColor = () => {
     if (args.error) {
       return 'var(--ds-input-danger-icon)';
@@ -49,22 +53,22 @@ export const Select: StoryFn = (args) => {
   };
 
   return html`
-    <ds-select
+    <ds-input-text
       .disabled="${args.disabled}"
       .size="${args.size}"
       .hierarchy="${args.hierarchy}"
-      .value="${args.value}"
       .error="${args.error}"
-      .placeholder="${'Placeholder'}"
-      .options=${['Option 1', 'Option 2', 'Option 3']}
+      .value="${args.value}"
+      @input="${() => console.log('Input event fired!')}"
     >
       <span slot="label">${args.label || 'Select label'}</span>
       <span slot="helperText">${args.helperText || 'Helper text'}</span>
       <span slot="iconRight"><ds-icon
         .size=${args.size}
-        name="chevron-down"
+        name="info-circle"
         .color=${iconColor()}
       </span>
-    </ds-select>
+    </ds-input-text>
+    <ds-icon name="info-circle-sm" color="tomato"></ds-icon>
   `;
 };

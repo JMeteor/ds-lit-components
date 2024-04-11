@@ -1,0 +1,32 @@
+{
+  "name": "@ds/storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_8f99a0637cb8f24"
+  },
+  "dependencies": {
+    "lit": "^2.7.5",
+    "@ds/components": "file:../components"
+  },
+  "devDependencies": {
+    "chromatic": "^6.19.9",
+    "@storybook/addon-essentials": "^7.0.26",
+    "@storybook/addon-links": "^7.0.26",
+    "@storybook/blocks": "^7.0.26",
+    "@storybook/builder-vite": "^7.0.26",
+    "@storybook/web-components": "^7.0.26",
+    "@storybook/web-components-vite": "^7.0.26",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.0.26",
+    "tsx": "^4.7.1",
+    "vite": "^4.4.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

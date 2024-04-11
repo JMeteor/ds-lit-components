@@ -3,8 +3,6 @@ import { generateCssVariables } from '@d/helpers/generateCssVariables.ts';
 import FigmaService from '@d/services/FigmaService.ts';
 import { writeFile } from 'fs/promises';
 
-// const FILE_ID = '5c22sZuGvYByweBe0kgCbY' // jacobe
-// const FILE_ID = 'MYI5LujaJMRevufayyMMl4'; // jacob backup
 const FILE_ID = 'IRdkRXDkBsjEqVestx6Bbt'; // jacob backup
 
 const figmaService = new FigmaService();
@@ -27,7 +25,7 @@ const figmaService = new FigmaService();
   // console.log(designTokens)
 
   await writeFile(
-    'src/styles/variables.css',
+    'dist/styles/variables.css',
     generateCssVariables(designTokens)
   );
 })();

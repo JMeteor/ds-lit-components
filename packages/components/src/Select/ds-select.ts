@@ -1,7 +1,7 @@
 import { css, html, LitElement, PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { computePosition, offset, size } from '@floating-ui/dom';
-import { MaybeHTMLElement } from '@/helpers/types.ts';
+import { MaybeHTMLElement } from '../helpers/types.ts';
 
 @customElement('ds-select')
 export class DsSelect extends LitElement {
