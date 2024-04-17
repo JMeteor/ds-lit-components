@@ -1,9 +1,9 @@
-import './Button/ds-button'; // nie ma sesnsu exporteu samej klasy
-import './Icon/ds-icon';
-import './InputText/ds-inputText';
-import './Select/ds-select';
+import './ds-button/ds-button'; // nie ma sesnsu exporteu samej klasy
+import './ds-icon/ds-icon';
+import './ds-inputText/ds-inputText';
+import './ds-select/ds-select';
 
-export type * from './Button/ds-button';
-export type * from './Icon/ds-icon';
-export type * from './InputText/ds-inputText';
-export type * from './Select/ds-select';
+export type * from './ds-button/ds-button';
+export type * from './ds-icon/ds-icon';
+export type * from './ds-inputText/ds-inputText';
+export type * from './ds-select/ds-select';

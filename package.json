@@ -14,9 +14,11 @@
     "typescript": "^5.0.2"
   },
   "workspaces": [
+    "apps/docs",
+    "apps/storybook",
     "packages/components",
     "packages/core",
-    "packages/docs",
-    "packages/storybook"
+    "packages/icons",
+    "packages/utils"
   ]
 }

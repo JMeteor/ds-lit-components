@@ -6,10 +6,10 @@ export default defineConfig({
     lib: {
       entry: {
         index: 'src/index.ts', // good practice to import each components
-        button: 'src/Button/ds-button',
-        icon: 'src/Icon/ds-icon',
-        inputText: 'src/InputText/ds-inputText',
-        select: 'src/Select/ds-select',
+        button: 'src/ds-button/ds-button',
+        icon: 'src/ds-icon/ds-icon',
+        inputText: 'src/ds-inputText/ds-inputText',
+        select: 'src/ds-select/ds-select',
       },
       formats: ['es'],
       // formats: ['es', 'cjs'],
