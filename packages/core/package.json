@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "exports": {
-    "variables": "./dist/styles/variables.css"
+    "./variables": "./dist/styles/variables.css"
   },
   "scripts": {
     "fetch-figma": "tsx src/tokens/runFetchFigmaFile.ts"
