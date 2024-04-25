@@ -5,11 +5,8 @@ import { fileURLToPath, URL } from 'node:url';
 
 export default defineConfig({
   build: {
-    lib: {
-      entry: 'src/my-element.ts',
-      formats: ['es'],
-    },
     emptyOutDir: true,
+    assetsDir: 'assets',
   },
   resolve: {
     alias: {

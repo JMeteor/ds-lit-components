@@ -1,11 +1,12 @@
-import { BlendMode, Node, RGBA } from '@figma/rest-api-spec'
+import { BlendMode, Node, RGBA, TypeStyle } from '@figma/rest-api-spec';
 
 export type StyleNode = Node & {
-  fills: StyleFill[]
-}
+  fills: StyleFill[];
+  style: TypeStyle;
+};
 
 export type StyleFill = {
-  blendMode: BlendMode
-  type: 'SOLID'
-  color: RGBA
-}
+  blendMode: BlendMode;
+  type: 'SOLID';
+  color: RGBA;
+};

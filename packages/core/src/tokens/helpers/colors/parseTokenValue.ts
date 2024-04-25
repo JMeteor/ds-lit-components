@@ -1,6 +1,6 @@
 import { RGBA } from '@figma/rest-api-spec';
 import { rgbaToHex } from './rgbaToHex.ts';
-import { ColorMode } from '@/tokens/enums/ColorMode.enum.ts';
+import { ColorMode } from '@d/enums/ColorMode.enum.ts';
 
 export const parseTokenValue = (color: RGBA, colorMode: ColorMode) => {
   const rgbaString = `rgba(${Math.floor(color.r * 255)}, ${Math.floor(

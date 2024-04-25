@@ -1,9 +1,5 @@
 import { html } from 'lit';
 import { Meta, StoryFn } from '@storybook/web-components';
-// import '@ds/components/button';
-
-// import '../ds-icon/ds-icon';
-// import { spreadProps } from '@open-wc/lit-types'
 
 const meta = {
   title: 'Components/ds-button',

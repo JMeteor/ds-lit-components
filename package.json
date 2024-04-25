@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "format-check": "npx prettier --check ./",
-    "format-write": "npx prettier --write ./"
+    "format-write": "npx prettier --write ./",
+    "build:components": "npm --prefix packages/components run build",
+    "build:core": "npm --prefix packages/core run build",
+    "build:storybook": "npm --prefix apps/storybook run build"
   },
   "dependencies": {
   },
