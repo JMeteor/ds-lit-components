@@ -1,4 +1,4 @@
-import './ds-button/ds-button'; // nie ma sesnsu exporteu samej klasy
+import './ds-button/ds-button';
 import './ds-icon/ds-icon';
 import './ds-inputText/ds-inputText';
 import './ds-select/ds-select';

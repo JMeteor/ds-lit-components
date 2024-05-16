@@ -4,16 +4,18 @@
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
     "module": "ESNext",
+    "declaration":  true,
+    "outDir": "./dist",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
     "esModuleInterop": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "bundler", // for ESNext
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "emitDeclarationOnly": true,
 
     /* Linting */
     "strict": true,
@@ -22,5 +24,5 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src/**/*"],
-  "exclude": ["src/**/*.stories.ts"]
+  "exclude": ["src/**/*.stories.ts", "src/**/*.test.ts", "src/**/*.spec.ts"]
 }

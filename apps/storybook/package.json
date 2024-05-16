@@ -6,7 +6,7 @@
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=chpt_8f99a0637cb8f24"
+    "chromatic": "npx chromatic --project-token=CHROMATIC_TOKEN"
   },
   "dependencies": {
     "lit": "^2.7.5",

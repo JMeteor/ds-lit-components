@@ -10,8 +10,6 @@
     "build:core": "npm --prefix packages/core run build",
     "build:storybook": "npm --prefix apps/storybook run build"
   },
-  "dependencies": {
-  },
   "devDependencies": {
     "prettier": "3.0.0",
     "typescript": "^5.0.2"
