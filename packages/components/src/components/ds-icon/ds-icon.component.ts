@@ -1,7 +1,8 @@
-import { css, html, LitElement, PropertyValues } from 'lit';
+import { html, LitElement, PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
 import { styleMap } from 'lit/directives/style-map.js';
+import { styles } from './ds-icon.styles.ts';
 
 const icons: { [key: string]: string } = {
   'chevron-down': `
@@ -20,6 +21,7 @@ const icons: { [key: string]: string } = {
 
 @customElement('ds-icon')
 export class DsIcon extends LitElement {
+  static styles = styles;
   @property({ type: String })
   size = 'md';
 
@@ -71,16 +73,4 @@ export class DsIcon extends LitElement {
       .innerHTML=${this._svgContent}
     ></svg>`;
   }
-
-  static styles = css`
-    .icon {
-      display: block;
-      height: 24px;
-      width: 24px;
-      &.icon--sm {
-        height: 16px;
-        width: 16px;
-      }
-    }
-  `;
 }

@@ -2,7 +2,8 @@ import { html } from 'lit';
 import { Meta, StoryFn } from '@storybook/web-components';
 
 const meta = {
-  title: 'Components/ds-button',
+  title: 'Components/Button',
+  component: 'ds-button',
   argTypes: {
     text: {
       control: { type: 'text' },
