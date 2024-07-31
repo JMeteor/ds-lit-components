@@ -1,0 +1,22 @@
+html,
+body {
+    box-sizing: border-box;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding: 40px !important;
+}
+
+h1:first-of-type,
+h2:first-of-type,
+h3:first-of-type {
+    margin-top: 0;
+}
+
+pre {
+    font-size: 12px;
+    line-height: 1.6;
+}

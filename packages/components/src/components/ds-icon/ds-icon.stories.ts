@@ -2,7 +2,7 @@ import { html } from 'lit';
 import { Meta, StoryFn } from '@storybook/web-components';
 
 const meta = {
-  title: 'Components/ds-icon',
+  title: 'Components/Icon',
   argTypes: {
     size: {
       control: { type: 'radio' },

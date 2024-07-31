@@ -7,7 +7,7 @@ import { mapTextTokens } from '@d/helpers/fonts/mapTextTokens.ts';
 
 const FILE_ID = 'IRdkRXDkBsjEqVestx6Bbt'; // jacob backup
 
-const FILE_PATH = 'dist/css/variables.css';
+const FILE_PATH = 'src/css/variables.css';
 const figmaService = new FigmaService();
 
 (async () => {
