@@ -8,22 +8,17 @@
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic --project-token=CHROMATIC_TOKEN"
   },
-  "dependencies": {
-    "lit": "^2.7.5",
-    "@ds/components": "*"
-  },
   "devDependencies": {
     "chromatic": "^6.19.9",
-    "@storybook/addon-essentials": "^7.0.26",
-    "@storybook/addon-links": "^7.0.26",
-    "@storybook/blocks": "^7.0.26",
-    "@storybook/builder-vite": "^7.0.26",
-    "@storybook/web-components": "^7.0.26",
-    "@storybook/web-components-vite": "^7.0.26",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-links": "7.5.3",
+    "@storybook/blocks": "7.5.3",
+    "@storybook/builder-vite": "7.5.3",
+    "@storybook/web-components": "7.5.3",
+    "@storybook/web-components-vite": "7.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "^7.0.26",
-    "tsx": "^4.7.1",
+    "storybook": "7.5.3",
     "vite": "^4.4.0"
   },
   "keywords": [],
