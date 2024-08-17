@@ -54,14 +54,18 @@ export const TextInput: StoryFn = (args) => {
 
   return html`
     <ds-text-input
+      id="test"
+      name="test"
       .disabled="${args.disabled}"
       .size="${args.size}"
       .hierarchy="${args.hierarchy}"
       .error="${args.error}"
-      .value="${args.value}"
+      .value="${args.value || ''}"
       @input="${() => console.log('Input event fired!')}"
     >
-      <span slot="label">${args.label || 'Label'}</span>
+      <span slot="label">
+        <label for="test">${args.label || 'Label'}</label>
+      </span>
       <span slot="helperText">${args.helperText || 'Helper text'}</span>
       <span slot="iconRight"><ds-icon
         .size=${args.size}

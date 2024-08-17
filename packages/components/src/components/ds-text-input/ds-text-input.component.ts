@@ -7,23 +7,27 @@ import { ElementInternals } from 'element-internals-polyfill/dist/element-intern
 export class DsTextInput extends LitElement {
   static styles = styles;
   static formAssociated = true;
-  internals: ElementInternals;
+  _internals: ElementInternals;
 
-  // @property({ type: String, reflect: true })
-  // name = '';
+  @property({ type: String, reflect: true })
+  name = '';
 
-  @property({ type: Boolean, reflect: true })
+  @property({ type: String, reflect: true })
+  id = '';
+
+  // ariaRequired
+  @property({ type: Boolean, reflect: true, attribute: 'required' })
   required: boolean = false;
 
-  @property({ type: String })
+  @property({ type: String, reflect: true })
   value = '';
 
-  // @property({ type: String, reflect: true })
-  // ariaDisabled: 'true' | 'false' = 'false';
-
+  // aria-disabled
   @property({ type: Boolean, reflect: true })
   disabled: boolean = false;
 
+  // aria-invalid
+  // aria-errormessage
   @property({ type: Boolean, reflect: true })
   error = false;
 
@@ -33,50 +37,79 @@ export class DsTextInput extends LitElement {
   @property({ type: String, reflect: true })
   size = 'md';
 
-  @property({ type: String })
-  placeholder = 'Input texts';
+  // ariaPlaceholder
+  @property({ type: String, reflect: true })
+  placeholder = '';
 
   @query('input')
   private controlElement!: HTMLInputElement;
 
+  private helperTextId = crypto.randomUUID();
+
   constructor() {
     super();
-    this.internals = this.attachInternals();
+    this._internals = this.attachInternals();
   }
 
-  handleInput() {
+  connectedCallback() {
+    super.connectedCallback();
+
+    this._internals.ariaDisabled = this.disabled ? 'true' : 'false';
+    this._internals.ariaRequired = this.required ? 'true' : 'false';
+    this._internals.ariaInvalid = this.error ? 'true' : 'false';
+    this._internals.ariaPlaceholder = this.placeholder;
+
+    this.updateAriaAttributes();
+  }
+
+  private updateAriaAttributes() {
+    const helperTextSlot = this.shadowRoot?.querySelector(
+      'slot[name="helperText"]'
+    );
+
+    if (helperTextSlot) {
+      if (this.error) {
+        this.controlElement.removeAttribute('aria-describedby');
+        this.controlElement.setAttribute(
+          'aria-errormessage',
+          this.helperTextId
+        );
+      } else {
+        this.controlElement.removeAttribute('aria-errormessage');
+        this.controlElement.setAttribute('aria-describedby', this.helperTextId);
+      }
+    } else {
+      this.controlElement.removeAttribute('aria-errormessage');
+      this.controlElement.removeAttribute('aria-describedby');
+    }
+  }
+
+  private handleInput() {
     this.value = this.controlElement.value;
-    this.internals.setFormValue(this.value);
+    this._internals.setFormValue(this.value);
   }
-
-  // This ensures our element always participates in the form
-  // protected firstUpdated(_changedProperties: PropertyValues) {
-  //   super.firstUpdated(_changedProperties);
-  //   this.internals.setFormValue(this.value);
-  // }
-
-  // setFormValue()
-  // setValidity();
-  // validationMessage;
-  // checkValidity();
 
   render() {
     return html`
       <div class="wrapper">
-        <label>
-          <slot name="label"></slot>
-        </label>
+        <slot name="label"></slot>
         <div class="input-wrapper">
           <input
-            value=${this.value}
-            ?disabled=${this.disabled}
-            @input=${this.handleInput}
-            placeholder=${this.placeholder}
             type="text"
+            name=${this.name}
+            id=${this.id}
+            .placeholder=${this.placeholder}
+            .value=${this.value}
+            ?disabled=${this.disabled}
+            ?required=${this.required}
+            @input=${this.handleInput}
           />
           <slot name="iconRight"></slot>
         </div>
-        <p class="helperText ${this.error ? 'error' : 'hint'}">
+        <p
+          id=${this.helperTextId}
+          class="helperText ${this.error ? 'error' : 'hint'}"
+        >
           <slot name="helperText"></slot>
         </p>
       </div>
