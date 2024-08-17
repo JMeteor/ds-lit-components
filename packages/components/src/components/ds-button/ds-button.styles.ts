@@ -11,6 +11,10 @@ export const styles = css`
     outline: none;
   }
 
+  :host(:not([disabled])) .container {
+    cursor: pointer;
+  }
+
   :host([size='md']) .container {
     border-radius: 8px;
     font-size: 16px;

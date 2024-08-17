@@ -7,19 +7,8 @@ import { ElementInternals } from 'element-internals-polyfill/dist/element-intern
 @customElement('ds-button')
 export class DsButton extends LitElement {
   static styles = styles;
+  static formAssociated = true;
   private _internals: ElementInternals;
-
-  // TODO: Add ARIA properties
-  // - role: 'button'
-  // - ariaLabel: string
-  // - ariaDisabled: boolean
-  // - click/keydown
-
-  // Doesn't have to be exposed to component api
-  // @property({ type: String, reflect: true })
-  // ariaLabel = '';
-  // @property({ type: String, reflect: true })
-  // ariaDisabled: 'true' | 'false' = 'false';
 
   /**
    * Changes the button to a disabled state
@@ -40,6 +29,12 @@ export class DsButton extends LitElement {
   size: 'sm' | 'md' = 'md';
 
   /**
+   * Enables form submission on click
+   */
+  @property({ type: Boolean, reflect: true })
+  submit: boolean = false;
+
+  /**
    * Changes the visual style of the button
    */
   @property({ type: String, reflect: true })
@@ -48,13 +43,44 @@ export class DsButton extends LitElement {
   constructor() {
     super();
     this._internals = this.attachInternals();
+    this._internals.role = 'button';
+    this.tabIndex = 0;
+  }
+
+  private updateAriaLabel(slotElement: HTMLSlotElement) {
+    const assignedNodes = slotElement.assignedNodes({ flatten: true });
+
+    const textContent = assignedNodes
+      .filter((node) => node.nodeType === Node.TEXT_NODE)
+      .map((node) => node.textContent)
+      .join('')
+      .trim();
+
+    if (textContent) {
+      this._internals.ariaLabel = textContent;
+    }
   }
 
   connectedCallback() {
     super.connectedCallback();
-    this._internals.role = 'button';
-    this._internals.ariaLabel = 'testLabel';
+
     this._internals.ariaDisabled = this.disabled ? 'true' : 'false';
+
+    const slotElement = this.shadowRoot?.querySelector(
+      'slot:not([name])'
+    ) as HTMLSlotElement;
+    if (slotElement) {
+      this.updateAriaLabel(slotElement);
+    }
+
+    this.addEventListener('click', this.handleClick);
+    this.addEventListener('keydown', this.handleKeyDown);
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    this.removeEventListener('click', this.handleClick);
+    this.removeEventListener('keydown', this.handleKeyDown);
   }
 
   updated(_changedProperties: PropertyValues) {
@@ -64,16 +90,45 @@ export class DsButton extends LitElement {
     }
   }
 
-  updateLabel(event: Event) {
+  handleSlotChange(event: Event) {
     const slotElement: HTMLSlotElement = event.target as HTMLSlotElement;
-    console.log(slotElement);
+    this.updateAriaLabel(slotElement);
+  }
+
+  private handleClick() {
+    if (this.submit && !this.disabled) {
+      const form = this.closest('form');
+      if (form) {
+        const submitEvent = new SubmitEvent('submit', {
+          cancelable: true,
+          bubbles: true,
+        });
+        form.dispatchEvent(submitEvent);
+
+        if (!submitEvent.defaultPrevented) {
+          form.submit();
+        }
+      }
+    }
+  }
+
+  // should I use event .key or .code???
+  private handleKeyDown(event: KeyboardEvent) {
+    if (
+      this.submit &&
+      !this.disabled &&
+      (event.key === 'Enter' || event.key === ' ')
+    ) {
+      event.preventDefault();
+      this.click();
+    }
   }
 
   render() {
     return html`
       <div class="container">
         <slot name="iconBefore"></slot>
-        <slot @slotchange=${this.updateLabel}></slot>
+        <slot @slotchange=${this.handleSlotChange}></slot>
         <slot name="iconAfter"></slot>
       </div>
     `;
