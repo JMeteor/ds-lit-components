@@ -15,7 +15,7 @@
     "@storybook/builder-vite": "7.5.3",
     "@storybook/web-components": "7.5.3",
     "@storybook/web-components-vite": "7.5.3",
-    "chromatic": "^6.24.1",
+    "chromatic": "^11.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "7.5.3",
