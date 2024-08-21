@@ -39,6 +39,22 @@ export const styles = css`
     transform: translateY(-50%);
   }
 
+  :host([hierarchy='primary']) ::slotted([slot='iconRight']) {
+    stroke: var(--ds-input-primary-icon);
+  }
+
+  :host([hierarchy='primary'][disabled]) ::slotted([slot='iconRight']) {
+    stroke: var(--ds-input-primary-icon-disabled);
+  }
+
+  :host([hierarchy='secondary']) ::slotted([slot='iconRight']) {
+    stroke: var(--ds-input-secondary-icon);
+  }
+
+  :host([hierarchy='secondary'][disabled]) ::slotted([slot='iconRight']) {
+    stroke: var(--ds-input-secondary-icon-disabled);
+  }
+
   :host([hierarchy='primary']) label {
     color: var(--ds-input-primary-label);
   }
@@ -93,6 +109,10 @@ export const styles = css`
 
   :host([error]) input {
     border-color: var(--ds-input-danger-stroke);
+  }
+
+  :host([error]) ::slotted([slot='iconRight']) {
+    stroke: var(--ds-input-danger-icon);
   }
 
   .helperText {

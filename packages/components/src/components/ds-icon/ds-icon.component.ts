@@ -1,7 +1,6 @@
 import { html, LitElement, PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { classMap } from 'lit/directives/class-map.js';
-import { styleMap } from 'lit/directives/style-map.js';
 import { styles } from './ds-icon.styles.ts';
 
 const icons: { [key: string]: string } = {
@@ -24,9 +23,6 @@ export class DsIcon extends LitElement {
   static styles = styles;
   @property({ type: String })
   size = 'md';
-
-  @property({ type: String })
-  color = '';
 
   @property({ type: String })
   name = '';
@@ -62,11 +58,8 @@ export class DsIcon extends LitElement {
 
     const viewBox = this.size === 'sm' ? '0 0 16 16' : '0 0 24 24';
 
-    const iconColor = { stroke: `${this.color || 'white'}` };
-
     return html` <svg
       class=${classMap(classes)}
-      style=${styleMap(iconColor)}
       viewBox=${viewBox}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"

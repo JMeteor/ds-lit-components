@@ -30,24 +30,6 @@ const meta = {
 export default meta;
 
 export const Select: StoryFn = (args) => {
-  const iconColor = () => {
-    if (args.error) {
-      return 'var(--ds-input-danger-icon)';
-    }
-    if (args.disabled && args.hierarchy === 'primary') {
-      return 'var(--ds-input-primary-icon-disabled)';
-    }
-    if (args.disabled && args.hierarchy === 'secondary') {
-      return 'var(--ds-input-secondary-icon-disabled)';
-    }
-    if (args.hierarchy === 'primary') {
-      return 'var(--ds-input-primary-icon)';
-    }
-    if (args.hierarchy === 'secondary') {
-      return 'var(--ds-input-secondary-icon)';
-    }
-  };
-
   return html`
     <ds-select
       .disabled="${args.disabled}"
@@ -60,10 +42,10 @@ export const Select: StoryFn = (args) => {
     >
       <span slot="label">${args.label || 'Label'}</span>
       <span slot="helperText">${args.helperText || 'Helper text'}</span>
-      <span slot="iconRight"><ds-icon
+      <span slot="iconRight">
+        <ds-icon
         .size=${args.size}
         name="chevron-down"
-        .color=${iconColor()}
       </span>
     </ds-select>
   `;
