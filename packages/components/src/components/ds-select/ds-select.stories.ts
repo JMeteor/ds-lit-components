@@ -58,7 +58,7 @@ export const Select: StoryFn = (args) => {
       .placeholder="${'Placeholder'}"
       .options=${['Option 1', 'Option 2', 'Option 3']}
     >
-      <span slot="label">${args.label || 'ds-select label'}</span>
+      <span slot="label">${args.label || 'Label'}</span>
       <span slot="helperText">${args.helperText || 'Helper text'}</span>
       <span slot="iconRight"><ds-icon
         .size=${args.size}

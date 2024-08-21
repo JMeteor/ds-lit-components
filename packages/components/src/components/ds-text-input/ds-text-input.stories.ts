@@ -1,5 +1,6 @@
 import { html } from 'lit';
 import { Meta, StoryFn } from '@storybook/web-components';
+import { action } from '@storybook/addon-actions';
 
 const meta = {
   title: 'Components/Text Input',
@@ -53,14 +54,18 @@ export const TextInput: StoryFn = (args) => {
 
   return html`
     <ds-text-input
+      id="test"
+      name="test"
       .disabled="${args.disabled}"
       .size="${args.size}"
       .hierarchy="${args.hierarchy}"
       .error="${args.error}"
-      .value="${args.value}"
+      .value="${args.value || ''}"
       @input="${() => console.log('Input event fired!')}"
     >
-      <span slot="label">${args.label || 'ds-select label'}</span>
+      <span slot="label">
+        <label for="test">${args.label || 'Label'}</label>
+      </span>
       <span slot="helperText">${args.helperText || 'Helper text'}</span>
       <span slot="iconRight"><ds-icon
         .size=${args.size}
@@ -69,5 +74,19 @@ export const TextInput: StoryFn = (args) => {
       </span>
     </ds-text-input>
     <ds-icon name="info-circle-sm" color="tomato"></ds-icon>
+  `;
+};
+
+export const FormValue = () => {
+  const logFormChange = (event: Event) => {
+    const target = event.target as any;
+    const formData = new FormData(target.internals.form as HTMLFormElement);
+    const formDataObj = Object.fromEntries(formData.entries());
+    action('change')(formDataObj);
+  };
+  return html`
+    <form @input=${logFormChange}>
+      <ds-text-input name="test"></ds-text-input>
+    </form>
   `;
 };

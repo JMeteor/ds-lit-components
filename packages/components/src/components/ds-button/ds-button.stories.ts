@@ -20,6 +20,9 @@ const meta = {
       control: { type: 'radio' },
       options: ['filled', 'outlined'],
     },
+    submit: {
+      control: { type: 'boolean' },
+    },
     iconBefore: {
       control: { type: 'boolean' },
     },
@@ -44,17 +47,31 @@ export const Button: StoryFn = (args) => {
   return html`
     <ds-button
       .disabled="${args.disabled}"
-      .size="${args.size}"
-      .hierarchy="${args.hierarchy}"
-      .type="${args.type}"
+      .size="${args.size || 'md'}"
+      .hierarchy="${args.hierarchy || 'primary'}"
+      .type="${args.type || 'filled'}"
       .iconBefore="${args.iconBefore}"
       .iconAfter="${args.iconAfter}"
+      .submit="${args.submit}"
     >
       <span slot="iconBefore"
         >${iconBeforeHTML}</ds-icon
       ></span>
-      ${args.text || 'ds-button label'}
+      ${args.text || 'Label'}
       <span slot="iconAfter">${iconAfterHTML}</span>
     </ds-button>
+  `;
+};
+
+export const ButtonForm: StoryFn = (args) => {
+  const handleSubmit = (e: Event) => {
+    e.preventDefault();
+    alert('Form submitted');
+  };
+
+  return html`
+    <form @submit=${handleSubmit}>
+      <ds-button submit>Submit</ds-button>
+    </form>
   `;
 };
