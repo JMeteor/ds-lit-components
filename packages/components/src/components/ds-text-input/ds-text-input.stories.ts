@@ -57,8 +57,8 @@ export const TextInput: StoryFn = (args) => {
       id="test"
       name="test"
       .disabled="${args.disabled}"
-      .size="${args.size}"
-      .hierarchy="${args.hierarchy}"
+      .size="${args.size || 'md'}"
+      .hierarchy="${args.hierarchy || 'primary'}"
       .error="${args.error}"
       .value="${args.value || ''}"
       @input="${() => console.log('Input event fired!')}"
@@ -81,8 +81,8 @@ export const FormValue = () => {
   const logFormChange = (event: Event) => {
     const target = event.target as any;
     const formData = new FormData(target.internals.form as HTMLFormElement);
-    const formDataObj = Object.fromEntries(formData.entries());
-    action('change')(formDataObj);
+    // const formDataObj = Object.fromEntries(formData.entries());
+    // action('change')(formDataObj);
   };
   return html`
     <form @input=${logFormChange}>

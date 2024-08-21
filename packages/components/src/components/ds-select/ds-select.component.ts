@@ -89,6 +89,8 @@ export class DsSelect extends LitElement {
   }
 
   private onClick(event: Event) {
+    if (this.disabled) return;
+
     event.stopPropagation();
     const value = (event.target as HTMLLIElement).dataset.value;
     if (value !== undefined) {
@@ -153,6 +155,8 @@ export class DsSelect extends LitElement {
   }
 
   private handleKeyDown(event: KeyboardEvent) {
+    if (this.disabled) return;
+
     if (!this.dropdownOpen) {
       if (
         event.code === 'ArrowDown' ||

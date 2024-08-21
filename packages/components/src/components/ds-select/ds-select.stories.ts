@@ -32,9 +32,9 @@ export default meta;
 export const Select: StoryFn = (args) => {
   return html`
     <ds-select
-      .disabled="${args.disabled}"
-      .size="${args.size}"
-      .hierarchy="${args.hierarchy}"
+      .disabled="${args.disabled || false}"
+      .size="${args.size || 'md'}"
+      .hierarchy="${args.hierarchy || 'primary'}"
       .value="${args.value}"
       .error="${args.error}"
       .placeholder="${'Placeholder'}"
