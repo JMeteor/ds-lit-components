@@ -117,7 +117,7 @@ export class DsButton extends LitElement {
     if (
       this.submit &&
       !this.disabled &&
-      (event.key === 'Enter' || event.key === ' ')
+      (event.code === 'Enter' || event.code === 'Space')
     ) {
       event.preventDefault();
       this.click();
