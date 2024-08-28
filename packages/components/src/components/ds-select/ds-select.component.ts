@@ -1,20 +1,18 @@
 import { html, LitElement, PropertyValues } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
+import { customElement, property, query, queryAll } from 'lit/decorators.js';
 import { computePosition, offset, size } from '@floating-ui/dom';
-import { MaybeHTMLElement } from '../../types/MaybeHTMLElement.ts';
 import { styles } from './ds-select.styles';
 import { ElementInternals } from 'element-internals-polyfill/dist/element-internals';
+import { getTrimmedSlotText } from '../../shared/slot-utils.ts';
 
 @customElement('ds-select')
 export class DsSelect extends LitElement {
   static styles = styles;
   private _internals: ElementInternals;
 
-  // ariaDisabled
   @property({ type: Boolean, reflect: true })
   disabled = false;
 
-  // ariaInvalid
   @property({ type: Boolean, reflect: true })
   error = false;
 
@@ -39,6 +37,18 @@ export class DsSelect extends LitElement {
   @property({ type: Boolean })
   private dropdownOpen = false;
 
+  @query('.input')
+  _input!: HTMLInputElement;
+
+  @query('.dropdown')
+  _dropdown!: HTMLElement;
+
+  @queryAll('.dropdown-item')
+  _options!: NodeListOf<HTMLElement>;
+
+  _labelSlot?: HTMLSlotElement | null;
+  _helperTextSlot?: HTMLSlotElement | null;
+
   private selectedIndex = -1;
 
   constructor() {
@@ -47,45 +57,68 @@ export class DsSelect extends LitElement {
     this._internals.role = 'listbox';
   }
 
-  async updated(changedProperties: PropertyValues) {
-    if (changedProperties.has('dropdownOpen') && this.dropdownOpen) {
-      const input: MaybeHTMLElement = this.shadowRoot?.querySelector('.input');
-      const dropdown: MaybeHTMLElement =
-        this.shadowRoot?.querySelector('.dropdown');
-
-      if (input && dropdown) {
-        computePosition(input, dropdown, {
-          placement: 'bottom-start',
-          middleware: [
-            size({
-              apply({ rects }) {
-                Object.assign(dropdown.style, {
-                  width: `${rects.reference.width}px`,
-                });
-              },
-            }),
-            offset(1),
-          ],
-        }).then(({ x, y }) => {
-          Object.assign(dropdown.style, {
-            left: `${x}px`,
-            top: `${y}px`,
-          });
-        });
-      }
-    }
-  }
-
   connectedCallback() {
     super.connectedCallback();
+    this._internals.ariaDescription = '';
+    this._internals.ariaLabel = '';
+
     window.addEventListener('click', this.closeDropdown);
     this.addEventListener('keydown', this.handleKeyDown);
+
+    this.updateComplete.then(() => {
+      this._labelSlot = this.shadowRoot?.querySelector('slot[name="label"]');
+      this._helperTextSlot = this.shadowRoot?.querySelector(
+        'slot[name="helperText"]'
+      );
+
+      this.updateAriaLabel();
+      this.updateAriaDescription();
+    });
   }
 
   disconnectedCallback() {
     super.disconnectedCallback();
     window.removeEventListener('click', this.closeDropdown);
     this.removeEventListener('keydown', this.handleKeyDown);
+  }
+
+  async updated(changedProperties: PropertyValues) {
+    if (changedProperties.has('disabled')) {
+      this._internals.ariaDisabled = this.disabled ? 'true' : 'false';
+    }
+
+    if (changedProperties.has('error')) {
+      this._internals.ariaInvalid = this.error ? 'true' : 'false';
+    }
+
+    if (changedProperties.has('placeholder')) {
+      this._internals.ariaPlaceholder = this.placeholder;
+    }
+
+    // TODO: Detect slot changes
+    // console.log(changedProperties);
+
+    if (changedProperties.has('dropdownOpen') && this.dropdownOpen) {
+      computePosition(this._input, this._dropdown, {
+        placement: 'bottom-start',
+        middleware: [
+          size({
+            apply({ rects, elements }) {
+              Object.assign(elements.floating.style, {
+                width: `${rects.reference.width}px`,
+              });
+            },
+          }),
+          offset(1),
+        ],
+      }).then(({ x, y }) => {
+        const element = this._dropdown;
+        Object.assign(element.style, {
+          left: `${x}px`,
+          top: `${y}px`,
+        });
+      });
+    }
   }
 
   private onClick(event: Event) {
@@ -114,31 +147,19 @@ export class DsSelect extends LitElement {
   };
 
   private focusOption() {
-    const options = this.shadowRoot?.querySelectorAll('.dropdown-item');
-
-    if (
-      options &&
-      this.selectedIndex >= 0 &&
-      this.selectedIndex < options.length
-    ) {
-      (options[this.selectedIndex] as HTMLElement).focus();
+    if (this.selectedIndex >= 0 && this.selectedIndex < this._options.length) {
+      (this._options[this.selectedIndex] as HTMLElement).focus();
     }
   }
 
   private focusInput() {
-    const input = this.shadowRoot?.querySelector('.input');
-    if (input) {
-      (input as HTMLElement).focus();
-    }
+    this._input.focus();
   }
 
   private navigateOptions(direction: number) {
-    const options = this.options;
-    if (options.length === 0) return;
-
     const newIndex = this.selectedIndex + direction;
 
-    if (newIndex >= 0 && newIndex < options.length) {
+    if (newIndex >= 0 && newIndex < this._options.length) {
       this.selectedIndex = newIndex;
       this.requestUpdate();
       this.focusOption();
@@ -146,8 +167,8 @@ export class DsSelect extends LitElement {
   }
 
   private selectOption() {
-    if (this.selectedIndex >= 0 && this.selectedIndex < this.options.length) {
-      this.selected = this.options[this.selectedIndex];
+    if (this.selectedIndex >= 0 && this.selectedIndex < this._options.length) {
+      this.selected = this._options[this.selectedIndex].dataset.value ?? '';
       this.error = false;
       this.closeDropdown();
       this.focusInput();
@@ -189,6 +210,20 @@ export class DsSelect extends LitElement {
         this.closeDropdown();
         this.focusInput();
         break;
+    }
+  }
+
+  private updateAriaLabel() {
+    if (this._labelSlot) {
+      this._internals.ariaLabel = getTrimmedSlotText(this._labelSlot);
+    }
+  }
+
+  private updateAriaDescription() {
+    if (this._helperTextSlot) {
+      this._internals.ariaDescription = getTrimmedSlotText(
+        this._helperTextSlot
+      );
     }
   }
 
