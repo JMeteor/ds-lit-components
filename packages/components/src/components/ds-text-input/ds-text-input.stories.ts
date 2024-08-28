@@ -1,6 +1,5 @@
 import { html } from 'lit';
 import { Meta, StoryFn } from '@storybook/web-components';
-import { action } from '@storybook/addon-actions';
 
 const meta = {
   title: 'Components/Text Input',
@@ -54,7 +53,6 @@ export const TextInput: StoryFn = (args) => {
 
   return html`
     <ds-text-input
-      id="test"
       name="test"
       .disabled="${args.disabled}"
       .size="${args.size || 'md'}"
@@ -64,7 +62,7 @@ export const TextInput: StoryFn = (args) => {
       @input="${() => console.log('Input event fired!')}"
     >
       <span slot="label">
-        <label for="test">${args.label || 'Label'}</label>
+        ${args.label || 'Label'}
       </span>
       <span slot="helperText">${args.helperText || 'Helper text'}</span>
       <span slot="iconRight"><ds-icon

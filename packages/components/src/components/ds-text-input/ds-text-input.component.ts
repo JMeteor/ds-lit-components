@@ -1,7 +1,8 @@
-import { html, LitElement } from 'lit';
+import { html, LitElement, PropertyValues } from 'lit';
 import { customElement, property, query } from 'lit/decorators.js';
 import { styles } from './ds-text-input.styles';
 import { ElementInternals } from 'element-internals-polyfill/dist/element-internals';
+import { getTrimmedSlotText } from '../../shared/slot-utils.ts';
 
 @customElement('ds-text-input')
 export class DsTextInput extends LitElement {
@@ -12,22 +13,15 @@ export class DsTextInput extends LitElement {
   @property({ type: String, reflect: true })
   name = '';
 
-  @property({ type: String, reflect: true })
-  id = '';
-
-  // ariaRequired
   @property({ type: Boolean, reflect: true, attribute: 'required' })
   required: boolean = false;
 
   @property({ type: String, reflect: true })
   value = '';
 
-  // aria-disabled
   @property({ type: Boolean, reflect: true })
   disabled: boolean = false;
 
-  // aria-invalid
-  // aria-errormessage
   @property({ type: Boolean, reflect: true })
   error = false;
 
@@ -37,14 +31,14 @@ export class DsTextInput extends LitElement {
   @property({ type: String, reflect: true })
   size = 'md';
 
-  // ariaPlaceholder
   @property({ type: String, reflect: true })
   placeholder = '';
 
   @query('input')
-  private controlElement!: HTMLInputElement;
+  private _input!: HTMLInputElement;
 
-  private helperTextId = crypto.randomUUID();
+  private _labelSlot?: HTMLSlotElement | null;
+  private _helperTextSlot?: HTMLSlotElement | null;
 
   constructor() {
     super();
@@ -56,37 +50,49 @@ export class DsTextInput extends LitElement {
 
     this._internals.ariaDisabled = this.disabled ? 'true' : 'false';
     this._internals.ariaRequired = this.required ? 'true' : 'false';
-    this._internals.ariaInvalid = this.error ? 'true' : 'false';
-    this._internals.ariaPlaceholder = this.placeholder;
 
-    this.updateAriaAttributes();
+    this.updateComplete.then(() => {
+      this._labelSlot = this.shadowRoot?.querySelector('slot[name="label"]');
+      this._helperTextSlot = this.shadowRoot?.querySelector(
+        'slot[name="helperText"]'
+      );
+
+      this.updateAriaLabel();
+      this.updateAriaDescription();
+    });
   }
 
-  private updateAriaAttributes() {
-    const helperTextSlot = this.shadowRoot?.querySelector(
-      'slot[name="helperText"]'
-    );
+  async updated(changedProperties: PropertyValues) {
+    if (changedProperties.has('disabled')) {
+      this._internals.ariaDisabled = this.disabled ? 'true' : 'false';
+    }
 
-    if (helperTextSlot) {
-      if (this.error) {
-        this.controlElement.removeAttribute('aria-describedby');
-        this.controlElement.setAttribute(
-          'aria-errormessage',
-          this.helperTextId
-        );
-      } else {
-        this.controlElement.removeAttribute('aria-errormessage');
-        this.controlElement.setAttribute('aria-describedby', this.helperTextId);
-      }
-    } else {
-      this.controlElement.removeAttribute('aria-errormessage');
-      this.controlElement.removeAttribute('aria-describedby');
+    if (changedProperties.has('error')) {
+      this._internals.ariaInvalid = this.error ? 'true' : 'false';
+    }
+
+    if (changedProperties.has('placeholder')) {
+      this._internals.ariaPlaceholder = this.placeholder;
     }
   }
 
   private handleInput() {
-    this.value = this.controlElement.value;
+    this.value = this._input.value;
     this._internals.setFormValue(this.value);
+  }
+
+  private updateAriaLabel() {
+    if (this._labelSlot) {
+      this._internals.ariaLabel = getTrimmedSlotText(this._labelSlot);
+    }
+  }
+
+  private updateAriaDescription() {
+    if (this._helperTextSlot) {
+      this._internals.ariaDescription = getTrimmedSlotText(
+        this._helperTextSlot
+      );
+    }
   }
 
   render() {
@@ -97,7 +103,6 @@ export class DsTextInput extends LitElement {
           <input
             type="text"
             name=${this.name}
-            id=${this.id}
             .placeholder=${this.placeholder}
             .value=${this.value}
             ?disabled=${this.disabled}
@@ -106,10 +111,7 @@ export class DsTextInput extends LitElement {
           />
           <slot name="iconRight"></slot>
         </div>
-        <p
-          id=${this.helperTextId}
-          class="helperText ${this.error ? 'error' : 'hint'}"
-        >
+        <p class="helperText ${this.error ? 'error' : 'hint'}">
           <slot name="helperText"></slot>
         </p>
       </div>

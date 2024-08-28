@@ -59,8 +59,6 @@ export class DsSelect extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
-    this._internals.ariaDescription = '';
-    this._internals.ariaLabel = '';
 
     window.addEventListener('click', this.closeDropdown);
     this.addEventListener('keydown', this.handleKeyDown);
