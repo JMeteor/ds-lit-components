@@ -226,7 +226,7 @@ export class DsSelect extends LitElement {
   }
 
   render() {
-    return html` <div class="wrapper">
+    return html`<div class="wrapper">
       <label>
         <slot name="label"></slot>
       </label>

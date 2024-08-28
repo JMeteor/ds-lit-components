@@ -8,7 +8,10 @@ const meta = {
     label: {
       control: { type: 'text' },
     },
-    hint: {
+    helperText: {
+      control: { type: 'text' },
+    },
+    placeholder: {
       control: { type: 'text' },
     },
     size: {
@@ -22,6 +25,7 @@ const meta = {
     error: {
       control: { type: 'boolean' },
     },
+
     disabled: {
       control: { type: 'boolean' },
     },
@@ -37,15 +41,13 @@ export const Select: StoryFn = (args) => {
       .hierarchy="${args.hierarchy || 'primary'}"
       .value="${args.value}"
       .error="${args.error}"
-      .placeholder="${'Placeholder'}"
+      .placeholder="${args.placeholder || 'Placeholder'}"
       .options=${['Option 1', 'Option 2', 'Option 3']}
     >
       <span slot="label">${args.label || 'Label'}</span>
       <span slot="helperText">${args.helperText || 'Helper text'}</span>
       <span slot="iconRight">
-        <ds-icon
-        .size=${args.size}
-        name="chevron-down"
+        <ds-icon .size=${args.size} name="chevron-down" />
       </span>
     </ds-select>
   `;

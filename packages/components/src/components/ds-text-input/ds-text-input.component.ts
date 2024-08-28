@@ -10,9 +10,6 @@ export class DsTextInput extends LitElement {
   static formAssociated = true;
   _internals: ElementInternals;
 
-  @property({ type: String, reflect: true })
-  name = '';
-
   @property({ type: Boolean, reflect: true, attribute: 'required' })
   required: boolean = false;
 
@@ -98,11 +95,12 @@ export class DsTextInput extends LitElement {
   render() {
     return html`
       <div class="wrapper">
-        <slot name="label"></slot>
+        <label>
+          <slot name="label"></slot>
+        </label>
         <div class="input-wrapper">
           <input
             type="text"
-            name=${this.name}
             .placeholder=${this.placeholder}
             .value=${this.value}
             ?disabled=${this.disabled}
