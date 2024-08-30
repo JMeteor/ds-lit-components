@@ -25,7 +25,6 @@ const meta = {
     error: {
       control: { type: 'boolean' },
     },
-
     disabled: {
       control: { type: 'boolean' },
     },

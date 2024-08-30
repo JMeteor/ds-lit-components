@@ -63,15 +63,15 @@ export const Button: StoryFn = (args) => {
   `;
 };
 
-export const ButtonForm: StoryFn = (args) => {
-  const handleSubmit = (e: Event) => {
-    e.preventDefault();
-    alert('Form submitted');
-  };
-
-  return html`
-    <form @submit=${handleSubmit}>
-      <ds-button submit>Submit</ds-button>
-    </form>
-  `;
-};
+// export const ButtonForm: StoryFn = (args) => {
+//   const handleSubmit = (e: Event) => {
+//     e.preventDefault();
+//     alert('Form submitted');
+//   };
+//
+//   return html`
+//     <form @submit=${handleSubmit}>
+//       <ds-button submit>Submit</ds-button>
+//     </form>
+//   `;
+// };
